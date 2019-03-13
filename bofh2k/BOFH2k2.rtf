@@ -1,0 +1,3033 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fcharset0 Arial;}}
+\viewkind4\uc1\pard\f0\fs20 BOFH and the VAX cluster bomb\par
+By Simon Travaglia\par
+Posted: 04/01/2002 at 11:04 GMT\par
+\par
+BOFH 2002: Episode 1\par
+\par
+So I'm having a quiet six pints after work - waiting for The PFY to join me so I can shout him a lager or two - when a geeky type from the Helldesk crawls over and introduces himself.\par
+\par
+I'm momentarily taken aback by this blatant abuse of workplace hierarchical protocol, but this is shortly overcome by his intriguing question.\par
+\par
+"I was just wondering," he burbles, "if you know of a way to fire protect some equipment I've got?"\par
+\par
+"Fireproof?" I ask. "An unusual request. What sort of equipment precisely?"\par
+\par
+"A vaxcluster," he burbles excitedly.\par
+\par
+"A VAX Cluster?" I ask, suppressing a shudder.\par
+\par
+"Yes, but not just any ordinary vaxcluster - it's a beowoulf cluster."\par
+\par
+"A Vax Beowoulf cluster," I repeat, pausing momentarily to try and think of a sadder life form - coming up blank.\par
+\par
+"Yes, I've got three Alphas, Two 11/780s, a 11/730 and four microvaxes."\par
+\par
+"Yes, wel.."\par
+\par
+"And I'm rebuilding an 8530 which I got from a company that was going to SCRAP it!"\par
+\par
+"Shocking!" I concur, humouring him - figuring that anyone who would rebuild an 8530 in their own time is someone who needs gentle handling.. (and possibly locking up for a long, long time). "Although, TECHNICALLY the Alphas aren't actually VAXes, are they?"\par
+\par
+"No!" he blurts, incorrectly identifying me as a fellow Digital geek. "HOWEVER, they're early Alphas, which were the most backwardly compatible."\par
+\par
+"I think you'll find that most of that gear is fairly backward," I murmur.\par
+\par
+"Pardon?"\par
+\par
+"I said I think you'll find that you're going to need fairly hefty fireproofing. What sort of room are they in?" I ask, mentally picturing the hottest, noisiest, most cramped double bedsit in the world.\par
+\par
+"Well it's a perk of a part-time job I have looking after a standby datacentre - they let me run some of my machines there in return for me keeping an eye on the place.\par
+\par
+"Right, I see. So there's no space problems. And given the machine's age, I assume you're worrying about thermal shock?\par
+\par
+"Exactly!"\par
+\par
+"Is the cluster doing anything important?"\par
+\par
+"Well it's been calculating Pi to a new record of decimal places for almost a year now."\par
+\par
+"So you don't want to take it down to install the fire protection?"\par
+\par
+Our conversation is interrupted by the arrival of The PFY, so I get the Helldesk geek back over with a quick wave and ask him to explain his dilemma, telling him The PFY is the brains behind our infrastructure protection systems.\par
+\par
+As the problem unfolds The PFY's eyes light up in anticipation.\par
+\par
+"I suggest you use a liquid extinguisher, stored at room temperature," The PFY comments as turns from the bar with a drink for me and the Helldesk geek.\par
+\par
+"Not gas?"\par
+\par
+"No - Gas systems introduce thermal shock from their expansion - law of thermodynamics. Besides, they're hellishly expensive. However, a liquid coolant/extinguisher doesn't expand, and so can be kept at the same temperature as the equipment."\par
+\par
+"I see. And what coolant do you suggest, water?"\par
+\par
+"No, water has a problem in that it can actually act as an oxidant in very hot fires involving metals like magnesium, etc, some of which are used in computing."\par
+\par
+"So what coolant?"\par
+\par
+"Well, recent thinking seems to centre around a semi-viscous liquid like an oil." \par
+\par
+"An OIL?!"\par
+\par
+"Yes - because oil has a very low heating coefficient."\par
+\par
+"Huh?"\par
+\par
+"It takes ages to get oils to change temperatures, which makes them ideal for extinguishers."\par
+\par
+"Really?"\par
+\par
+"Of course! Think about it. How long does it take to boil a jug?"\par
+\par
+"About five minutes."\par
+\par
+"And how long does it take your chippy to warm up their vat?"\par
+\par
+"I don't know."\par
+\par
+"Well it takes about one and a half hours - see my point?"\par
+\par
+"No?"\par
+\par
+"It takes a lot longer to heat vat oil up than the water in your jug. And you know why?"\par
+\par
+"Because the vat's about 100 times the size of my jug?"\par
+\par
+"NO, because oil has a lower heating coefficient!"\par
+\par
+"Oh, I see. So what oil is commonly used?"\par
+\par
+"Generally, Industrial Diesel."\par
+\par
+"DIESEL OIL!?!! But that's flammable!!" the geek cries.\par
+\par
+"Only under very particular circumstances," The PFY responds calmly, plying the geek with yet another drink, "generally very high pressure as well as extreme heat. Neither of which you'll get in a computing environment."\par
+\par
+"I don't understand," the geek responds, dubiously.\par
+\par
+"Do you know how a diesel engine works?"\par
+\par
+"Like a car engine?"\par
+\par
+"Not at all! Diesel has such a low octane that the engine actually has to pressurise the stuff to make it ignite. AND the engine has to have heat from a glow plug to actually get the pressurised stuff to burn!"\par
+\par
+"Really?"\par
+\par
+"Of course. hy do you think most of the world's cars run on petrol?"\par
+\par
+"And it won't catch fire in computers?"\par
+\par
+"It hasn't in ours, and we've been using it for over a year now."\par
+\par
+"Really?"\par
+\par
+"Of course, what do you think those drums of diesel in the store are for?"\par
+\par
+"The generator?"\par
+\par
+"Goodness no! You wouldn't run a generator on Industrial diesel! It's crap. You'd be better running it on petrol like we do"\par
+\par
+"You run your diesel generator on petrol?"\par
+\par
+"Uhuh, and we use the diesel for our fire extinguishers. In fact, I could probably give you a barrel as we only keep it in case of a leak in the system."\par
+\par
+"I don't think I need it - we have a generator in the datacenter which I could refill with petrol, and use the diesel of!"\par
+\par
+"Right! Where is this datacentre?"\par
+\par
+"It's a couple of blocks away, in the basement of that large insurance building."\par
+\par
+"An Insurance building" The PFY mouths thoughtfully. "Tell you what - why don't you shoot there and set it all up and we could help you commission it once we've had our dinner!"\par
+\par
+"Ok!" The geek chirps, slipping off quickly.\par
+\par
+"Couple more pints before we head over?" The PFY asks.\par
+\par
+"Yeah, I spose I could fit them in. And remind me to pick up your birthday present on the way over."\par
+\par
+"What, the latest Viz mag?" he asks, recounting last year's present.\par
+\par
+"I was thinking a packet of marshmallows?"\par
+\par
+"Perfect!" \par
+\par
+=========================================================================================\par
+\par
+BOFH gets his mobo working\par
+By Simon Travaglia\par
+Posted: 22/01/2002 at 09:28 GMT\par
+\par
+BOFH 2002: Episode 2\par
+\par
+So I'm sitting in Mission Control when The Boss bowls in with a complaint about some advice I'd given a geek from the helldesk last week.\par
+\par
+"He says the motherboard/processor/memory combo you told him to buy is crap!" he mutters.\par
+\par
+"What, the Gigabyte/Athlon/DDR?" I enquire, wondering what sort of paint thinner he's been tipping on his breakfast cereal. "True, it's not THE fastest processor out, but the price performance makes it a sure winner!"\par
+\par
+"He says it's slow," The Boss whines, starting to get on my tits.\par
+\par
+"How slow are we talking - as slow as the Microsoft software registration process?"\par
+\par
+"I don't know - he says it's as slow as his original machine!"\par
+\par
+"A PII with 32 Megs of memory? I hardly think so!"\par
+\par
+"He claims you deliberately recommended a crap box to him!!"\par
+\par
+"Bollocks! What operating system is he running?"\par
+\par
+"Ah... Windows X.P"\par
+\par
+"Ah yes. Not so much resource hungry as resource addicted. But still - what hardware's in it?"\par
+\par
+"I don't know! Here's his configuration page - you see if you can work it out."\par
+\par
+The Boss passes over a page of paper that looks to be the output of some generic system config utility, and I give it the old fisheye. Most disturbing is the handwritten note at the bottom 'and PCI/ISA Bridge'.\par
+\par
+"What's that?" I ask, pointing to the note.\par
+\par
+"Something your assistant recommended so that he could reuse his old disks and stuff to keep the total price down apparently."\par
+\par
+"Did you also ask the guy if he wanted to go on a camping trip?"\par
+\par
+"Wha? Why?"\par
+\par
+"No reason. So this Bridge card - what did it look like?"\par
+\par
+"How on earth would I know? Apparently your assistant did all the installation work! Moved his files and everything!"\par
+\par
+In the far recesses of my mind I hear the sound of a 1p piece hitting the pavement.\par
+\par
+"Ah! I'll get right onto it," I respond, reaching for a large hammer.\par
+\par
+. . . Ten minutes later . . .\par
+\par
+"So you moved his computer to a new case."\par
+\par
+"I never!" The PFY cries.\par
+\par
+"Sorry, let me put that a different way, You moved his computer to a new case."\par
+\par
+"What's different about that?"\par
+\par
+"This time the cattleprod in my pocket is charged up."\par
+\par
+"Ah. OK, so I might have pulled a quick one."\par
+\par
+"Indeed. And now he's found out about it."\par
+\par
+"He can't have! I added 32 Meg of memory to the motherboard, slapped it into a brand,spanking new case, 'upgraded' it to XP, then changed the screen resolution!!! I also put that 'System Config Reporter' program you wrote which just displays whatever it's been told to report. Should work like a charm!"\par
+\par
+"Obviously it hasn't. You can't just steal someone's upgrade and not expect them to notice. They expect a speed increase over all the other machines in their area. It's a status thing. The newest machine has to work better!"\par
+\par
+"So you're saying I should have given him the upgrade his department paid for?" the PFY asks.\par
+\par
+"Of course not! Letting a helldesk geek have a shit-hot box just to play minesweeper and freecell between disservice calls is criminal!"\par
+\par
+"Oh. So I should have upgraded my box, and given him my old stuff?"\par
+\par
+"Of course not. Even that's still a damn good upgrade!"\par
+\par
+"Well what else could I have done to make his machine run faster?"\par
+\par
+"The keyword here is comparatively faster. It has to run faster than everyone else's because it's new."\par
+\par
+"But how can I do that if I can't upgrade it?"\par
+\par
+"It's obvious. You sneak in and downgrade everyone else's. Just pull half their memory out."\par
+\par
+"They'll notice!"\par
+\par
+"No they won't - they're sheep. Anyway, you just start a rumour that it's a network problem and they'll complain about that - setting us up for a gigabyte-to-the-desktop project."\par
+\par
+"I think you're forgetting the people we're dealing with. These are helpdesk people!"\par
+\par
+"Good point. Grab any additional memory out of their video card, and drop the CPU speed jumper down a notch while you're at it."\par
+\par
+. . . One day later . . .\par
+\par
+"And as you can see, the machine works appreciably faster than earlier models."\par
+\par
+"It's way faster than mine," one of the guy's fellow geeks corroborates confusedly.\par
+\par
+"In fact even boot time is increased!" I add.\par
+\par
+"Mine doesn't even boo,t" another of the lesser intelligent member of the Helldesk adds. "I think there might be something wrong with the Network.."\par
+\par
+Shooting's too good for them...\par
+\par
+"It's still pretty slow," the Helldesk geek in question whines. "I'm sure it's not much faster than my original machine."\par
+\par
+"Ridiculous!" I respond. "How long does it take to boot."\par
+\par
+"About two minutes."\par
+\par
+"And what about that machine over there."\par
+\par
+"Just under five minutes."\par
+\par
+"So it's twice as fast as the other machines!"\par
+\par
+"Yeah, I suppose it is!" he gasps, seeing the silver lining after all.\par
+\par
+(It's just bloody sad.)\par
+\par
+"Mine still isn't booting," the really SAD geek says. "I think the network must be affecting DOS, cos that won't even load."\par
+\par
+"Can't you do something about that?" The Boss demands. \par
+\par
+"I suppose I could upgrade his network connection." \par
+\par
+"OK, do that!"\par
+\par
+"I'll go find get the.... six thinwire ethernet cards and some T connectors..." The PFY responds.\par
+\par
+"Fantastic!" the geek burbles.\par
+\par
+. . . the next day and six adaptor upgrades later. . .\par
+\par
+"You realise there's only one 'upgrade' left after this?" The PFY asks.\par
+\par
+"Yes I know, I'm just finding the OS2 disks now."\par
+\par
+It's just sad... \par
+\par
+========================================================================================\par
+\par
+The Bastard Guide To Writing Software\par
+By Simon Travaglia\par
+Posted: 04/02/2002 at 08:33 GMT\par
+\par
+\par
+\par
+BOFH 2002: Episode 3\par
+\par
+I HATE IT!!!!\par
+\par
+The Boss has been talking to some geeky guy from R&D who's so far 'out there' he's got satellites orbiting him, and now he wants us to develop our own software...\par
+\par
+"But it's a sure thing!" he cries, mentally preparing for his stardom on the international geek-talk circuit as the man who brought the world a new alternative. "We just write an Office type system that can compete with Microsoft and sell it for half the price!"\par
+\par
+"Compete," I respond dubiously, "with Microsoft?"\par
+\par
+"Yes."\par
+\par
+"The company whose court imposed penalty which was pretty much equivalent to a slap on the bum with a rolled up newspaper?"\par
+\par
+"Yes."\par
+\par
+"And by Newspaper I mean PART of a newspaper - something like the 'Culture' section of "The Sun", the non-boring bits of "The Financial Times" or the non-fiction portion of a vendor's Benchmarking specs handbook?".\par
+\par
+"Sorry?"\par
+\par
+"It doesn't matter."\par
+\par
+"But surely it's possible to write such a system?" The Boss asks, masking his disappointment as best he can.\par
+\par
+"It's possible, yes, but feasible, probably not."\par
+\par
+"Why not?"\par
+\par
+"Well for a start, there's the development staff. Not to mention analysis!"\par
+\par
+"Analysis?"\par
+\par
+"Yes - of needs, we'd have to find out what people know and want."\par
+\par
+"Oh, you mean like meeting rooms, questionnaires and some focus groups?"\par
+\par
+"I was thinking more of the Tape storeroom, a rubber hose and a bright light, but yes, you're in the right ballpark."\par
+\par
+"But we know what people want," The Boss continues, ignoring me. "They want what they've got, with more security - well, with ANY security - and cheaper. Obviously there's going to be expenses for the organisation in the training and travel side of things."\par
+\par
+"Travel?"\par
+\par
+"Well yes, to evaluate the options, visit vendors to see how they do things, that sort of thing?"\par
+\par
+>WHOOP! WHOOP!< >JUNKET ALERT!<\par
+\par
+And so the delicate process of junket negotiation begins...\par
+\par
+The Boss obviously knows that this project suggestion would be as popular as a Windows T-Shirt under Richard Stallman's Xmas tree and is now entering the delicate area of junket negotiation.... To get something he wants, he has to offer me something I might want in a manner that conforms to the Encoded Junket Standard RFC.\par
+\par
+"And who did you envisage going to these sites?" I ask, starting off the negotiation with a simple Query Junket packet.\par
+\par
+"Well I suppose the Project Champion, and some form of Secretarial/P.A person," he responds.\par
+\par
+(In other words, "Me and the new girl from the Admin Pool who's rumoured to be undergarment impaired and have a morally casual attitude.")\par
+\par
+"Uhuh," I respond, sending out the standard Junket Packet- Received-And-Decoded response.\par
+\par
+"...and obviously the Technical Project Manager."\par
+\par
+(Meaning: And obviously YOU, so I can get your vote when the feasibility of the matter is under discussion..)\par
+\par
+"And..." I add, resending a PRAD, and following up with an unsolicited Request For Further Junket Tradeoff Items.\par
+\par
+"And possibly one or other personnel who might be critical to the project."\par
+\par
+A standard Capacity For Extras Available packet, meaning Whoever you want to get the ball rolling\par
+"Well I was just thinking I may need some Personal Assistance myself if there's a lot of data to be compiled sorted through. And given that we're looking at external markets, probably it should be an external person."\par
+\par
+The Boss acknowledges my request for handbrake accompaniment, and the deal is struck...\par
+\par
+"I'll get right onto it." he burbles, heading out of the office at Warp Factor 5.\par
+\par
+. . . Later, at the Departmental Projects Meeting . . .\par
+\par
+"..which means we might both SAVE ourselves some licensing costs and EARN ourselves money as well. The benefits would far outweigh the costs!"\par
+\par
+"Really?" the Head of IT says. "But this travel, are you sure it's really necessary."\par
+\par
+"Well, to get a real feel for the development life cycle, yes."\par
+\par
+"But you don't seem to have thought of the higher levels of this - the management and marketing phases of the operation?" The Head responds, sending a Query Junket Packet.\par
+\par
+"Obviously, there would need to be some senior Management presence," The Boss negotiates.\par
+\par
+"Yes" the Head PRADs, followed rapidly by a RFFJT: "and perhaps.." \par
+\par
+"And obviously someone to organise the copious notes and meetings," The Boss CFEAs.\par
+\par
+Once more the deal is struck.\par
+\par
+"You've got to be kidding," The PFY jumps in, smelling blood in the water. "What about development and Analysis costs."\par
+\par
+There comes a time in every bastard's life when he has to sacrifice a friend for a junket. It's sad but true - and remember, all's fair in love and computing. More so if you're playing a teams shoot-em- up game and a team member gets in the way of your handcannon....\par
+\par
+"Well we don't need any analysis, because we know what they want.." I respond, going on to repeat The Boss's message from before.\par
+\par
+Seeing his chance of a junket going down the tubes, The PFY tries to torpedo mine.\par
+\par
+"What about Development costs then?" he snipes.\par
+\par
+"I know it'll cost a bit, but I've been working it out. You see, development costs can be worked out by multiplying the number of programmers and testers, by the cost of the development tools, by the number of hours it takes to develop the software - right?"\par
+\par
+"Yes," The PFY concurs.\par
+\par
+"And so by lowering one, we'd lower the cost of the whole project."\par
+\par
+"Yes."\par
+\par
+"Well, I've been looking at these Open Source Tools and, well, they don't cost anything."\par
+\par
+"Yes?" The PFY asks, not seeing the trap until it's too late.\par
+\par
+"So if the Number of programmers and testers, times the cost of development tools - which is zero, times the number of hours equals the cost of the job...."\par
+\par
+"yyessssss?"\par
+\par
+"Then the job should cost nothing."\par
+\par
+"Wait a minute.." the Head of IT frowns, performing some mental calculation involving carrying a bunch of 1s, subtracting the number he first thought of, and dividing by his belt size. "You know, I think he's RIGHT!"\par
+\par
+So it's a done deal. Junket approved and booked. True, I expect that when I get back all my plants will be poisoned, my desktop will be rigged to the mains, and my hydraulic chair will be remote controlled...\par
+\par
+But it's worth it.... \par
+\par
+========================================================================================\par
+\par
+BOFH: SQL for Retards\par
+By Simon Travaglia\par
+Posted: 17/02/2002 at 23:50 GMT\par
+\par
+\par
+\par
+\par
+BOFH 2002: Episode 4\par
+\par
+So the bloody DBA's complaining about performance problems, which really gets on my tits, given that he's responsible for them in the first place...\par
+\par
+"But you're the Systems Manager - you're responsible for performance," The Boss argues, no doubt having received training from DB central.\par
+\par
+"I'm responsible for the SYSTEM performance, yes," I comment. "But I'm not responsible for the which of the volumes he puts his tablespace on."\par
+\par
+"Uh?" The Boss responds, reverting to subhuman IQ as a defence.\par
+\par
+"OK, an analogy. Let's say I was the building owner and I rent you 30 offices."\par
+\par
+"Right."\par
+\par
+"And you have 30 staff."\par
+\par
+"Yes."\par
+\par
+"And you put them all in one office because then you won't have to go all around the floor to see what people are up to."\par
+\par
+"Yyyess?"\par
+\par
+"And then you complain to me about the air-conditioning because that one office is stinking hot, humid and smelly."\par
+\par
+"Ah, I get your point!"\par
+\par
+"Right!"\par
+\par
+"We could save on office rentals by packing people into offices, and I wouldn't have to walk around the building so much. But what about the Database problem? I've been told that it's affecting our Financials system quite badly.."\par
+\par
+NGGGGGGGGGGGgggggggggggggggggggggggggggggggg!\par
+\par
+"I think you're missing the point. I have allocated GOBS of space on different disks for the DBA to put Tablespaces into, however, he puts them only into one - because it's TIDIER. So it bottlenecks accessing that disk!"\par
+\par
+"But why would he do that?"\par
+\par
+"Because he's had no formal training in the DBA role? Because he read 'SQL for Retards' and lied on his CV? Because no-one tested his ability before they gave him a small bag of cash and his own office? Because we appointed someone on the cheap?"\par
+\par
+"I... Uh.. Well, it happened before I was here, so I don't know how I can help!"\par
+\par
+"Fire him? Get a good person in? Pay them properly?"\par
+\par
+"But they charge extortionate rates!"\par
+\par
+"So do we, and we're worth it. As opposed to the cowboys you normally hire - who probably don't even do backups!"\par
+\par
+"I'm sure he does backups!"\par
+\par
+"Ones that can be recovered from?"\par
+\par
+"I.. Well I.. .. Could you meet with him and talk with him about it?"\par
+\par
+!!!!\par
+\par
+"I don't think we'll get very far. He's not a very nice bloke - quite... offensive really"\par
+\par
+The Boss stops short of saying "that's rich coming from me" - but I know he's thinking it.\par
+\par
+. . .\par
+\par
+Later that day in DB Central, after five rounds of "I'm better than you because I can use the sqldba command..."\par
+\par
+"..so why don't we move a couple of the heavier-used tablespaces to other disks." I coach, suppressing my annoyance and trying to give him a couple of hints. "Run a select across the filespace location tables - you'll see they're all on the same disk."\par
+\par
+"I don't think you're really on the money there," the DBA smirks quietly. "SQL's a pretty complex language. It's not just SELECT A FROM B - often it's much more complex than that. You need to KNOW the database."\par
+\par
+"RIGHT! Well why don't I just pop downstairs and get my SQL for Dummies, and I'll be right back."\par
+\par
+"OK, if you want."\par
+\par
+. . . 10 minutes and lots of >clickety< >clicks< later . . . \par
+\par
+"I was thinking, we're using a Financials system based around our database aren't we?"\par
+\par
+"Yes," the DBA responds.\par
+\par
+"So you probably wouldn't do any SQL anyway would you - except for the odd DBA-type statement, if that."\par
+\par
+"No, there's a lot of SQL needed in this role - Backups for instance, an.."\par
+\par
+"But surely the backup script is static, and there would have been one in play here when you started?"\par
+\par
+"Yes, but it needed modifications as it wasn't optimal."\par
+\par
+***BINGO!***\par
+\par
+"OK, anyway, so I wrote down a couple of SQL statements which I'd like you to do for me."\par
+\par
+"Still trying to learn, eh?" he asks, not missing a chance to treat me condescendingly.\par
+\par
+"Well, got to keep trying, no matter how pointless," I concur, eating humble pie.\par
+\par
+"OK, fire away!"\par
+\par
+"Could you go into the financials database and type SELECT N,Q,A FROM DBAQUESTIONS WHERE N=1"\par
+\par
+>Clickety<\par
+\par
+"And that's one row which is '1', GUESS WHOSE DBA ACCOUNT JUST DROPPED THE GENERAL LEDGER TABLE' and 'YOURS'. Very odd. I don't even remember a table called DBAQUESTIONS?"\par
+\par
+"I think it's fairly new," I respond. "Now, moving right along, SELECT N,Q,A FROM DBAQUESTIONS WHERE N=2."\par
+\par
+>Clickety<\par
+\par
+"Which is '2', 'GUESS WHOSE BACKUP SCRIPT HAS A SYNTAX ERROR IN IT CAUSING IT TO BOMB OUT' and 'YOURS'. Are you sure this is a real table?"\par
+\par
+"Quite sure. Now SELECT N,Q, etc WHERE N=3."\par
+\par
+>Clickety<\par
+\par
+"'3', 'GUESS WHICH DBA HASN'T TAKEN A CONSISTENT BACKUP SINCE TWO DAYS AFTER HE STARTED' and 'YOU'..... This is one of your tables, isn't it?"\par
+\par
+"SELECT 'YES' FROM YESTABLE WHERE YESCOLUMN = 'YES'."\par
+\par
+"You won't get away with it."\par
+\par
+"SELECT * FROM YESIWILLTABLE."\par
+\par
+"Why do you keep talking like that," the DBA asks, getting a little disconcerted.\par
+\par
+"I'm into the Zone," I respond, "I can't help myself! But now do that first SELECT again, with N=4."\par
+\par
+>Clickety<\par
+\par
+"'4', 'GUESS WHO'LL BE FIRING YOU ONCE HE'S READ ALL THOSE EMAILS ABOUT HOW CRAP HE IS AS A BOSS' and 'THE BOSS'."\par
+\par
+>Clatter<\par
+\par
+Our Soon-to-be-Ex-DBA rushes off to try and save his job, which is bloody annoying, truth be known, as he didn't get around to the fifth row - my favourite "'5','GUESS WHO LOOSENED THE HANDRAIL ON THE STAIRS AND OILED THE FLOOR', 'ME'."\par
+\par
+>CRASH!<\par
+\par
+I type in a quick "SELECT * FROM DBAQUESTIONS" to have one last look, only to find an additional row '6', 'GUESS WHO'S GOING TO RAT YOU OUT UNLESS HE GETS SUFFICIENT LAGERS TO NUMB HIS MEMORY' '?'"\par
+\par
+I forsee a DROP TABLE that The PFY won't be expecting. At the pub.\par
+\par
+========================================================================================\par
+\par
+BOFH: Going Postal\par
+By Simon Travaglia\par
+Posted: 08/03/2002 at 14:11 GMT\par
+\par
+\par
+\par
+\par
+BOFH 2002: Episode 5\par
+\par
+It's 9am when I pause from my daily operational maintenance procedures (checking the out trays of the printers to see if anyone's been printing any juicy porn) to observe The Boss swiping his heart out outside the office. \par
+\par
+"Could you let me in please?" he asks through the glass, giving up on the normal access method.\par
+\par
+"I'm afraid I can't," I respond. "For some reason the security system believes that you're not permitted in this office."\par
+\par
+"That's ridiculous!" he snaps back. "I've got access everywhere! I've got more access than YOU!"\par
+\par
+"It would appear not," I respond. "But I think you'll have to take it up with Security."\par
+\par
+While The Boss is busy fuming, The PFY wanders up, accompanied by one of the Helldesk geeks.\par
+\par
+"What's going on?" The Geek asks.\par
+\par
+"The Boss is locked out," I respond.\par
+\par
+"Aren't you going to let him in?" The Geek asks, moving towards the door release button.\par
+\par
+"Ordinarily, yes."\par
+\par
+"But?" he asks, hesitating.\par
+\par
+"Well, it's possible that he's been fired and we've not been told about it."\par
+\par
+"That's ridiculous," The Boss snaps through the glass.\par
+\par
+"Can't we let him in and find out?" The Geek asks, about to press the Door Open button.\par
+\par
+"A policy that's probably worked well in several office shootings.." I respond, staring at The Boss intently.\par
+\par
+"SHOOTINGS?"\par
+\par
+"Yeah, you know. Guy gets fired, comes back the next day and mows down his co-workers."\par
+\par
+"As opposed to just getting another job," The PFY adds.\par
+\par
+"You know, he does look rather angry," The Geek murmurs quietly, noticing The Boss's crimson visage.\par
+\par
+"So are you going to open the door?" the PFY asks The Geek. "I mean obviously we're not really worried as our office is lockable, and that fails the computer room is a fortress."\par
+\par
+"This is ridiculous!" The Boss cries. "I still work here and I'm NOT carrying any guns! I don't even OWN a gun."\par
+\par
+"And a disenfranchised worker would never lie," The Geek blurts, getting in on the act.\par
+\par
+"I could always shoot through the glass," The Boss murmurs.\par
+\par
+"He's threatening to shoot us!" I cry.\par
+\par
+"I said I COULD. If I had a gun!" The Boss cries.\par
+\par
+"You could have one in your bag!" The Geek blurts, beating me to the punch.\par
+\par
+"I don't have a gun in my bag."\par
+\par
+"Could you open your bag?" The Geek asks.\par
+\par
+"I'm NOT opening my bag!" The Boss cries, peaking on the 'annoyed' scale.\par
+\par
+"What's happening here?!" The Head of IT asks, wandering up.\par
+\par
+"Security has locked him out, and he just threatened to shoot us," The Geek replies.\par
+\par
+"WHAT!"\par
+\par
+"It's OK, the glass is bulletproof and explosion-laminated," I add. \par
+\par
+"I HAVEN'T GOT A BLOODY GUN!" The Boss shouts as The PFY, Geek and I step back from the glass.\par
+\par
+"That's what he said before he said he was going to shoot us through the glass," The Geek burbles, giving the naso-anal interface a good workout.\par
+\par
+"Call security!" the Head of IT commands, in executive-decision mode.\par
+\par
+Being a good brown-nose, The Geek scurries off quickly and 30 seconds later I notice the red 'LOCKOUT' lamp on the swipe card readers illuminate.\par
+\par
+(Man, this beats working!)\par
+\par
+"They say they're not equipped for this, but they've called the Police!" The Geek gasps to the Head.\par
+\par
+"THE POLICE!" The Boss cries. "This is out of hand! My bloody card just doesn't work!"\par
+\par
+"He's getting very aggressive!" The Geek notes, taking the lead role in the inquisition. "Are you sure the glass is bulletproof!"\par
+\par
+"Yes it is." I respond. "But has anyone considered that it may just be that his card's not working?"\par
+\par
+"The why did he threaten to shoot us?" The Geek asks, Perry Masoning away. "And then he wouldn't show us in his bag! Who knows WHAT he's got in there."\par
+\par
+I stifle (with effort) the urge to suggest "A packet of smokes and a stick mag" and once again try for the voice of reason. "It may just be a broken swipe card."\par
+\par
+"Does he look like someone with a broken swipe card?" The Geek snaps back, gesturing at The Boss, who's looking a lot worse for wear.\par
+\par
+"Ok, I'll show you in my bag - will THAT satisfy you?"\par
+\par
+"If you're going to show us the bag you must have your gun somewhere else. Or maybe you've got those explosive shoes like that terrorist!" The Geek cries back.\par
+\par
+I pause momentarily to review what's taken place. And to think I was going to settle for just sending The Boss down to security to get a new card...\par
+\par
+My thoughts are interrupted by the arrival of armed Police, who direct The Boss into a sprawled position on the ground while they search him for weapons. \par
+\par
+Half an hour later it's over, and a very rumpled Boss enters his office, but doesn't sit down, thanks to an overzealous suggestion by The Geek about where he might be hiding an offensive weapon... Moments later, he's at the door of Mission Control, tapping on the glass...\par
+\par
+No, I couldn't..!\par
+\par
+I let him in.\par
+\par
+"I.. Uh.. Just wanted to thank you for your efforts in trying to calm down the situation earlier on," he mumbles. "Things seemed to get out of hand when the Helpdesk bloke got involved. And I was.. wondering if you could..."\par
+\par
+"Organise for the Helldesk geek to be at the bottom of a Comms riser when a carton of tinned goods accidentally falls from the fourthh floor?"\par
+\par
+"uh.. yes."\par
+\par
+"The PFY's already onto it..."\par
+\par
+It's like clockwork around here....\par
+\par
+=======================================================================================\par
+\par
+Bastardman and Robin\par
+By Simon Travaglia\par
+Posted: 20/03/2002 at 14:19 GMT\par
+\par
+\par
+\par
+\par
+BOFH 2002: Episode 6\par
+\par
+So The PFY and I are at some fundraiser that a vendor's slipped us tickets for when I happen to glance at the night sky, and notice the Horned Phone image in the clouds, which can only mean one thing - Commissioner Gordon needs us.\par
+\par
+I signal quietly to The PFY that we're needed by tipping my drink down his back. When that doesn't work, I point to the clouds.\par
+\par
+Getting back to Mission Control, I insert my fingers into the nose of the bust of Bill Gates in the corner of the office, pull back the head to reveal a red button - which I subsequently press - opening a secret door to a freight elevator that goes direct to an old sub-sub- sub-basement area, known only to the PFY, myself, and some sad people best not mentioned during daylight hours.\par
+\par
+The PFY and I waste no time in suiting up in our crime fighting gear (Jeans, Teeshirt, Doc Martins & Bottle of Brut 33 Spray [for emergencies only]).\par
+\par
+"To the Bastardmobile!" I cry, indicating the completely chromed exterior of our Ford Granada with a rebored 454 big block crammed under the hood. I start the engine on the seventh attempt and notice the flames shooting out the exhaust, which can only mean several things: The timing's probably shot, the Muffler is too, and high octane aviation fuel probably isn't the safest thing to be using. i.e. The car's rooted. \par
+\par
+(And I should probably move the fuel barrel from behind the car)\par
+\par
+Still, A good bastard never lets something like that get him down, and I plant the boot and we rocket out onto a side street, the disused Tube Station doors opening and closing noiselessly around us. Which is more than I can say for the Granada.\par
+\par
+. . . a brief theme tune and hourglass icon later . . .\par
+\par
+"Bastardman!" The Chief cries as we slip into a parking space outside the station with the grace and ease of a car accident. Which in fact it was, me only just noticing that what I thought was a car computer readout was really just the OIL light. "and Rabid!"\par
+\par
+The PFY and I nod in unison and slip in through the back passage. But obviously not The Chief's - no matter what you read in those sleazy showbiz mags.\par
+\par
+"What seems to the be the problem, commissioner?" I ask, as we enter his office, helping myself to one of his Cuban cigars. (I don't smoke the things obviously, but when they're on offer, one feels obliged.)\par
+\par
+"It's your old Archrival!" Commissioner Gordon responds "Back and causing problems!"\par
+\par
+"Oh, not ANOTHER security Patch for IE!" the PFY cries. "They promised to stop at 4000!"\par
+\par
+"No, not him!" the Commissioner responds.\par
+\par
+"The Questioner?" The PFY asks, recalling an enemy so annoying we sent him down for a long, long time,\par
+\par
+"No, no," the commissioner replies, shaking his head gravely. "We've had no more 'Are you sure you want to delete all these items' messages - EVEN WHEN YOU UNCHECK THE DISPLAY DELETE CONFIRMATION DIALOG BOX - since you sent that bastard down!"\par
+\par
+"Renderman?" the PFY asks\par
+\par
+"No, we've just had to get used to HTML messages being rendered without choice in Outlook, regardless of the gaping security risk that it poses."\par
+\par
+"Well then who ca.. NO!"\par
+\par
+"Yes!"\par
+\par
+"But he died!"\par
+\par
+"So we thought, but..."\par
+\par
+"HOLY CRAP-SETUP-CAUSING-REPEATED-SUPPORT- CALLS-FOR-YEARS-ON-END!" the PFY cries, firing up a cigar and helping himself to one of the Commissioner's lagers - as he's not driving. Come to think of it, given the smoking wreck outside, I pop the top off one myself.\par
+\par
+. . . Three hours later . . .\par
+\par
+"So what you're saying is that if you hit your desktop 20 times with a club hammer.." The Chief slurs, waving half a kebab around as a visual aid. "You're..."\par
+\par
+"You're actually configuring it's non-volatile settings", I finish, opening my tenth lager.\par
+\par
+"But isn't it just going to be stuffed?"\par
+\par
+"Indeed it is. However, it's never going to be UN-stuffed, which makes that setting non-volatile."\par
+\par
+"Ah, I see!"TThe Chief cries. \par
+\par
+"I don't see how any of this has to do with CRAP-INSTALLER- MAN!," the commissioner interrupts. "He's probably going around the city as we speak, doing poorly documented customised installs, and removing key components of the operating system."\par
+\par
+"You mean IE, which Windows is broken without?" The Chief burbles.\par
+\par
+"No, KEY components. Anyway, you don't seem to be too worried Bastardman...?"\par
+\par
+"I'm not. I've laid a trap for him, which I'm sure he'll fall into."\par
+\par
+"Ah, you mean you've got a desktop machine, removed the Operating System from it, and have left it in an office somewhere, KNOWING that Crap-Installer-Man will somehow find it, and work his fiendish business upon it!?"\par
+\par
+"No, I mean I removed some of the raised-floor tiles in the computer room, and removed the circuit breaker from the lights. Which he'll fall into."\par
+\par
+..One *CRASH* (which fills the whole screen, accompanied by a trumpet fanfare) later...\par
+\par
+"I think you've caught him Bastardman!" The Chief cries. "And now we can unmask the fie.."\par
+\par
+>JANGLE!< >JANGLE<\par
+\par
+I wake from my sleep to find the fire alarms going and the PFY shaking me vigorously.\par
+\par
+"Wha?" I ask\par
+\par
+"You fell asleep after the pub lunch!" the PFY cries. "And The Boss has just fallen thru the Computer Room raised floor in the dark, and dropped his coffee on the water leak detector cable."\par
+\par
+"What was he doing in the Computer Room - with or without a coffee"\par
+\par
+"He wanted to borrow a copy of the Win2k Install media?"\par
+\par
+"Ah. Right! So it was MOSTLY a dream then."\par
+\par
+"Wha?"\par
+\par
+"Oh. Nothing."\par
+\par
+Sometimes dreams are so real, you can still taste the lager .. \par
+\par
+========================================================================================\par
+\par
+BOFH: Oh Bondage, Up Yours!\par
+By Simon Travaglia\par
+Posted: 30/03/2002 at 11:37 GMT\par
+\par
+\par
+\par
+\par
+BOFH 2002: Episode 7\par
+\par
+So I'm sitting at my desk reading an online computing rag when The Boss trundles in.\par
+\par
+"Could you add this name to our website please?" The Boss asks, handing over a glossy brochure with the Company's name emblazoned all over it, complete with the website address of our competitors.\par
+\par
+"That's not our domain name," I murmur, pointing to the offending text.\par
+\par
+"Yes, it's a good idea isn't it? We advertise our stuff with the opposition's site address, and then we get all their customers because all their people will come to our site!!!"\par
+\par
+"They'll come to OUR site?"\par
+\par
+"Yes! It's this idea a guy in marketing had. If we use their name, but tell our web server to talk to anyone who wants to get to their website - we'll get all their customers!!!"\par
+\par
+The savouring process begins.\par
+\par
+"So let me get this straight - We use their website address and get all their customers to our website?"\par
+\par
+"By telling our server to pretend to be their server, yes."\par
+\par
+"And this would work how?"\par
+\par
+"The same way it did when you told our server to pretend to be the 'www' and 'jobs' servers. You know, virtual site, or whatever."\par
+\par
+"Ah, Of course. But wait! I've got a better idea - Why don't we pretend to be Microsoft.com - and then we'd get all their web traffic - and that's bound to be a stack more than we'd normally get! And then, when people automatically go for one of those patches to make Windows less secure, we can advertise to them!"\par
+\par
+"Do you think it would work?!" The Boss gasps.\par
+\par
+"As well as the first plan!" I respond.\par
+\par
+Before I get a chance put the slipper in repeatedly, he's off to assemble the Marketing Crew to tell them of his latest plan.\par
+\par
+The PFY gives me a withering look which can only mean he thinks I'm digging a hole to fall into..\par
+\par
+Half an hour later I'm starting to think that maybe he's right. The Boss is back with a huge list of dotcoms that the Marketing Dept has come up with that we could use to further our products.\par
+\par
+"Cisco.com - very good, Yahoo and Hotmail - excellent, yes, it looks like you've got a good list here. You realise that they're likely to complain.."\par
+\par
+"Really?"\par
+\par
+"Oh yes. And then it's legal problems - us having nothing to do with that industry - no end of hassles. Same for government sites."\par
+\par
+"Oh," The Boss burbles sadly, no doubt wondering how he can break the bad news.\par
+\par
+"Although I suppose you could use all the sites that get a stack of traffic, but have a less than happy existence with the legal system."\par
+\par
+"But you said that we can't use Microsoft."\par
+\par
+"No, I was thinking Porn sites."\par
+\par
+"Porn sites?"\par
+\par
+"Yes, Porn Sites. They get a stack of traffic and have a less-than- happy existence with legal authorities."\par
+\par
+"Do they get that much traffic?"\par
+\par
+"Well from our site alone the porn industry gets more hits than our website gets from the rest of the world."\par
+\par
+"Really."\par
+\par
+"Yes! I can show you the logs if you like! You'd be surprised who's looking at wha.."\par
+\par
+"That won't be necessary," The Boss chips in guiltily. "So which sites should we use?"\par
+\par
+"The popular ones, obviously."\par
+\par
+"And they are?"\par
+\par
+"Oh I don't know, I'd have to go and look to see which have a lot of content."\par
+\par
+"How long would it take?"\par
+\par
+"Oh, hardly any time at all - two, maybe three days."\par
+\par
+"I've got installations to do!" The PFY blurts, not succeeding in masking his annoyance.\par
+\par
+"I think that the installations could wait a while," The Boss responds.\par
+10 minutes later..\par
+\par
+"THREE DAYS OFF TO BROWSE PORN!" the PFY cries. "I LOVE MY JOB!"\par
+\par
+"I think you're missing the point," I respond. "We're trying to find sites that would be used to promote the company, which means that you'll be grading sites on the following criteria: The number of visitors; Originality and breadth of content; Specialist Content and quantity of content. Once you've rated the sites on these scales you would TELL ME ABOUT IT TOO BECAUSE I LOVE MY JOB AS WELL!!!!"\par
+\par
+..Three days later...\par
+\par
+"..And unfortunately, it transpires that you can't pretend to be a site which is already set up, as the DNS won't direct enquiries to your machine simply because you pretend\par
+to be that site!"\par
+\par
+"This is terrible!" The Boss blurts. "So we can't even use our opposition's site name after we printed all that promotional material?"\par
+\par
+"No."\par
+\par
+"So the whole thing's been a complete waste of time."\par
+\par
+"Pretty much. Although we do have a comprehensive list of the best free porn sites in the world"\par
+\par
+"Hmmm. Well I suppose we might be able to use it for some marketing purpose. May as well fire me an email message listing them."\par
+\par
+"I DONT THINK so!" The PFY interjects.\par
+\par
+"Look I don't have time to argue with you, just send me the message so I have something to prove that I wasn't wasting your time for three days."\par
+\par
+"50 quid."\par
+\par
+"That's preposterous! I'm not going to pay for research that you did on company time. And charging fifty pounds for it is ridiculous."\par
+\par
+"Indeed it is," I cry. "It's worth at least 100! What with all those Teen, Bondage and Webcam sites you found yesterday."\par
+\par
+"Bondage sites?" The Boss mumbles.\par
+\par
+10 seconds later...\par
+\par
+"And tell all your friends.." I say as The Boss leaves the office, while giving The PFY his cut.\par
+\par
+"Fifty quid bonus!" The PFY blurts happily.\par
+\par
+"I think you'll find it's 100 quid."\par
+\par
+"No, just 50!"\par
+\par
+"50 now, but 50 more when The Boss wants me to turn off website blocking (with our new updated list) in about 10 minutes."\par
+\par
+"It's like a dream, isn't it?" he responds. "Only better." \par
+\par
+======================================================================================\par
+\par
+The Bastard Junkets from Hell\par
+By Simon Travaglia\par
+Posted: 08/04/2002 at 12:08 GMT\par
+\par
+\par
+\par
+\par
+BOFH 2002: Episode 8\par
+\par
+I'm working away in the Computer room (reprogramming The Boss's internet traffic monitor with a club hammer) when an important email comes in, trips an alert on my incoming mail scanner, and causes me to be messaged via cellphone. \par
+\par
+This could be serious!\par
+\par
+And it is. Scant moments after popping out to pick up lunch (Lager and a chicken kebab) for The PFY and myself, I'm back in Mission Control decrypting the contents of the message.\par
+\par
+"Did you get the message from Junketwatch?" The PFY asks excitedly, spoiling the fun of it all.\par
+\par
+"Just reading it now. Anything stand out?"\par
+\par
+"Weeeellll.." The PFY drawls, looking holding up a training request form "I think it's going to be VITALLY important that I attend the 'Advanced Internetworking Security in Enterprise Situations' next week in Hawaii, given that I attended the 'Introduction to Internetworking Security in Enterprise Situations' last year, AND given our need to keep abreast of changes in the industry."\par
+\par
+"Indeed," I respond. "Would that be the course with 1 day of tutorials for every 3 days of vendor-sponsored drinks and events?"\par
+\par
+"Worst 2 weeks of my life!" The PFY concurs. "Getting up so early!"\par
+\par
+"Before 11am?" I ask, suppressing my sarcasm.\par
+\par
+"Yes."\par
+\par
+"When the bar opened?"\par
+\par
+"Uh huh."\par
+\par
+"On the four days there actually WERE lectures?"\par
+\par
+"Mmmmm."\par
+\par
+"And you don't think that you're extracting the urine?"\par
+\par
+"What?! It was hard work!"\par
+\par
+"I can imagine - all that counting out how many bottles were left in the mini-bar every morning to put in the refill order."\par
+\par
+"It wasn't all fun and games. Anyway, you can talk - you went on that Wireless LAN course!"\par
+\par
+"Only to upskill myself to allow us to leverage that technology to achieve a competitive advantage and perhaps a synergy with other incentive orientated departments."\par
+\par
+The Management Buzzword detector on the wall starts smoking after that sentence, so I feel it prudent to stop before the fire alarms trip.\par
+\par
+"And how HAVE we used it?"\par
+\par
+"Well we haven't, obviously, because at the course I learnt that there was no reliable standard to ensure the security of our transactions!"\par
+\par
+"On the first day - and then?"\par
+\par
+"And then I consulted both vendors and salespersons to determine the current market trends in this area and what we were to expect in the future."\par
+\par
+"I.e. They fed and watered you in the Bar for the next four days?"\par
+\par
+"No, that was far too noisy for the serious discussion that the topic warranted - so only part of my time was spent in the Hospitality area. The rest of the time I was taking copious notes on my laptop."\par
+\par
+"Till it broke."\par
+\par
+"Yes, it did get damaged on the second day, true..."\par
+\par
+"Didn't you have to get the laptop repaired for water damage? And the strange thing was it was heavily Chlorinated water - almost like what you'd find in a pool."\par
+\par
+"Yes, There was a small component of discussion near the pool, I recall."\par
+\par
+"And a small component of discussion near the golf course as well perhaps?"\par
+\par
+"Why do you ask?"\par
+\par
+"The golf tee stuck in the power adaptor socket..."\par
+\par
+"I did pop out to check the response of wireless in a non-built-up area, yes - and I must say it was good."\par
+\par
+"So you played a game of golf."\par
+\par
+"No, I used a personal disorganiser with a wireless card to record information at various geographic locations as a test of the throughput and error correction of the Wireless carrier."\par
+\par
+"Say.... Scoring at the end of every hole?"\par
+\par
+"Yes, I suppose so."\par
+\par
+"So you played a game of golf?"\par
+\par
+"Obviously, otherwise I'd have had nothing to test with and it would have just been a junket!"\par
+\par
+"Indeed," The PFY comments drily.\par
+\par
+Our point/counterpoints are interrupted by the arrival of The Boss, with a freshly printed sheet of paper with a course outline on it, which can only mean he's on the list at junketwatch too, worst luck.\par
+\par
+"Looks like I'll be away later in the month for a conference on.."\par
+\par
+"Enterprise Internet security," The PFY finishes.\par
+\par
+"u.."\par
+\par
+"In Hawaii?" I ask.\par
+\par
+"Uh..."\par
+\par
+"It seems there may be a conflict of interest here given our finite training budgets," I say, addressing the other two interested parties. "And there seems to be only one way of resolving this."\par
+\par
+"A reasoned discussion?" The Boss states thoughtfully.\par
+\par
+"Cattleprods at 5 paces?" The PFY asks.\par
+\par
+"No, no - none of these methods will truly reflect the suitability of the candidate for the level of skill needed at the course. No, I suggest something far more indicative of suitability..."\par
+\par
+2 minutes later.\par
+\par
+"I WON!" The PFY cries, as The Boss and I look on with disgust. "And it was all so logical - proving I am the suitable candidate!"\par
+\par
+"Yes, you seemed very confident, but how did you know?"\par
+\par
+"A piece of cake!" The PFY boasts "YOU'RE a human deskblotter, so you're bound to go Scissors or Paper because they're things you're familiar with, so I just had to stick to Scissors till you eventually chose paper."\par
+\par
+"But what's Rock got to do with Simon?"\par
+\par
+"Simple. Scissors and Paper are definitely out because you can't bash a machine to death with them. Besides, he always chooses Rock."\par
+\par
+It has to be admitted that The PFY has a point.\par
+\par
+"So that's it then?" The Boss sneers as The PFY does a victory lap of the floor in full gloat mode. "You're just going to take it?"\par
+\par
+"Of course I am" I reply magnanimously, "The PFY won fair and square, and that's all there is to it. He deserves to go - as would I if I'd won!"\par
+\par
+"Well, I must say that's an unexpected change of heart on your part!" The Boss mumbles, "and if you're big enough to accept it, well so am I!"\par
+\par
+The Boss departs, defeated, no doubt planning to ensure the airfare and hotel booking are able to be changed to a different name at the last minute just in case The PFY should suddenly become unavoidably detained in our Wales office with some terrible systems failure or the other. The sneaky bastard.\par
+\par
+With that in mind I put the second chicken kebab in my drawer alongside the first, as it now looks like I'll be buying lunch for both The Boss and The PFY late next week... \par
+\par
+========================================================================================\par
+\par
+The Bastard gets flustered\par
+By Simon Travaglia\par
+Posted: 14/04/2002 at 22:27 GMT\par
+\par
+\par
+\par
+\par
+BOFH 2002: Episode 9\par
+\par
+"I am so tired," the contract marketing consultant dweeb simpers as he plops down the large box of backup tapes he's been poring over and helps himself to a hot chocolate from the Operator's espresso machine. \par
+\par
+When I say hot chocolate, I mean used coffee grounds laced with crushed chocolate laxative tablets and cocoa powder. Following a spate of people helping themselves to the coffee machine paid for out of our own personal funds (well, the claims the PFY and I put in for overtime in the 'Creative Accounting' section of our timesheets) - we've decided the best defence is a good offence. The coffee is a particularly good blend, roast from only the finest pencil sharpenings, again mixed with our preloved grounds and crushed diet pills. True, it comes out a little light, but a lot can be achieved with liberal application of an inkjet refill package...\par
+\par
+"Tired?" The PFY asks, only encouraging the mutant to continue. "Why?"\par
+\par
+"I've been up half the night at a bloody photo shoot." he whines.\par
+\par
+"As opposed to us, who've been up the whole night recovering the data you lost," The PFY adds.\par
+\par
+"It was an accident!" the dweeb cries "An easy one to make too! The Del key is so near to the enter key!"\par
+\par
+"And the OK button on the delete confirmation message was so near to the Cancel Button?""\par
+\par
+"I got a bit flustered. I'd been up for 12 hours and the pressure takes its toll!"\par
+\par
+"What pressure was that then?" I ask.\par
+\par
+"The pressure of deadlines. We have to get our copy out on a schedule, and it has to be to the printers by lunchtime."\par
+\par
+"And if it's not in by lunchtime?"\par
+\par
+"The printers and publicity launch would have to be moved back a whole day!"\par
+\par
+"Sounds like a couple of phone calls to me," I interject.\par
+\par
+"I don't think you really understand the world of PR," he chuckles condescendingly "There's a lot more to it than a couple of phone calls."\par
+\par
+"Yes, you're probably right - what would I know about the real world?"\par
+\par
+"Not a lot, I'd bet," he adds. "Cloistered away here in a dark office, miles from the real world surrounded by machines instead of people.."\par
+\par
+"You're probably right," I agree, while The PFY shakes his head sadly in the background. "I think we're sometimes liable to forget who the real customer is."\par
+\par
+"Yes!" he answers, confirming my suspicions. "When it boils down to it, you people are there to look after us - not vice versa. We're the real producers in the company! I mean sure, you have technical ability, but you can get that sort of thing anywhere - there's LOADS of technical people looking for jobs at the moment."\par
+\par
+"Yes, there is a bit of a downturn, so I suppose we're lucky to be in work in the first place."\par
+\par
+"You bet you are!" the marketing dweeb continues, digging the hole that much bigger, "Without us you'd be another geek on the streets. In fact, you should be thankful to us for making the work that keeps you in a job - instead of always telling us that we can't do things!"\par
+\par
+"You mean like telling you that you can't just publish the address of some webpage and then get us to create it with zero days notice?"\par
+\par
+"Yeah!"\par
+\par
+"Or getting us to reschedule our morning maintenance downtimes till out-of-hours so that it doesn't affect your worktime - even though none of you turn up till 11am anyway?"\par
+\par
+"But we MIGHT turn up before 11 - and then we wouldn't be able to do our work!"\par
+\par
+"Yes, I think you're right. In fact, I feel that on behalf of my assistant and myself I'd like to ask you to pass on our thanks to you and your group. It's not often I come to realise my real place in the worl.. Oh bugger!"\par
+\par
+"What?" the dweeb asks\par
+\par
+"Oh, I've bloody gone and deleted all those files we recovered!"\par
+\par
+"How?"\par
+\par
+"It's that bloody DEL key - You're right, it's very close to the Enter key. I've never noticed how close it was before. And you'd think I would have, after 18 years in computing!"\par
+\par
+"It's OK, just don't hit OK on the confirm box!" he gasps.\par
+\par
+"Too late!" I blurt. "I got flustered!"\par
+\par
+"SHIT!" the dweeb says. "You'll have to recover it again as fast as you can!!!"\par
+\par
+"Sure," I cry. "I'm sorry. The most recent tape's still in the drive, so I should be able to... BOLLOCKS!"\par
+\par
+"WHAT!?" the dweeb cries.\par
+\par
+"I clicked the FORMAT button instead of RECOVER - They're so close together!"\par
+\par
+"It doesn't even ask you if you're sure?!!!?" the dweeb squeaks.\par
+\par
+"Well it did, but I got flustered and thought it meant sure that I wanted to recover!"\par
+\par
+"BUGGER!" The PFY cries from the other side of the room "Who put all these backup tapes on the scratch tape desk! I've just bloody erased them!"\par
+\par
+"WHAT?!" the dweeb squeaks, turning the sort of crimson that reeks of cerebral haemorrhage in the near future..\par
+\par
+"OH NO! " I say to The PFY grimly. "This doesn't look good for us - losgin all those files!"\par
+\par
+"What are we going to do?" The PFY nods. "I mean, with the job market like it is an all, we're sure to be replaced by one of those droves of computing professionals from the real world who knows more about computing than we do. We'll have to do something!"\par
+\par
+"Pub lunch?" I suggest.\par
+\par
+"Good idea!" \par
+\par
+"You can't be serious!" the dweeb cries.\par
+\par
+"Of course we are," I counter. "I mean after all, you can't put back your deadline with a couple of phone calls, and we can't get your files back without a low level disk recovery, which is bound to take a day or two. So, we may as well have an early - and long - pub lunch, as it won't make much difference anyway."\par
+\par
+"Well can you start the recovery now? I mean I could make some calls and see if I can put the deadline back a fewdays."\par
+\par
+"Or a week to be on the safe side," The PFY cries slipping his jacket on. "And we'd probably need an advance cash payment of overtime of.... 500 quid...each."\par
+\par
+"No, no," I sigh, slipping on my coat as well "I'm sure that's not how it happens in the real world. I'm sure in the real world contract Marketing Consultants have huge Malpractice insurance to cover situations like this. No, I'm afraid we're just old school." \par
+\par
+"Uh.. Malpractice Insurance?"\par
+\par
+"Yes, you know, if they delete information belonging to a company which is subsequently found to be unrecoverable. I'm sure you've got that, being in the real world and all."\par
+\par
+"Uh.. Yes."\par
+\par
+. . . .\par
+\par
+So The PFY and I are sitting in the pub with 500 quid apiece in readies contemplating the recovery plan we'll need to put in play.\par
+\par
+"So I'm guessing the easiest way would be to step through all the incremental tapes since the pre-2k upgrade snapshot?" The PFY asks.\par
+\par
+"Yes, that's one option."\par
+\par
+"Or would it be better to do a disk/file recovery - even though we don't know if we'll get everything back intact?"\par
+\par
+"Nah, I think we'll go with Plan A: Bring the recovery staging area back online in a week's time and just copy the files over from there. Fair enough?"\par
+\par
+"Gravy!" \par
+\par
+=======================================================================================\par
+\par
+he BOFH Desidoreplicator\par
+By Simon Travaglia\par
+Posted: 03/05/2002 at 15:26 GMT\par
+\par
+BOFH 2002: Not really an Episode but 10\par
+\par
+Desidoreplicator\par
+\par
+\par
+\par
+The following text was found carved into the back of a Commodore CBM Business machine, dated 1-Sep-1970\par
+\par
+Go placidly amid the noise and haste,\par
+and remember what peace there may be in pressing the UPS SHUTDOWN button.\par
+\par
+As far as possible, without surrender, be on good terms with all persons\par
+- Even the helpdesk\par
+Speak your truth quietly and clearly; \par
+and when that fails, use the ZX81 method of punching information into people repeatedly.\par
+\par
+Listen to others, even to the dull and ignorant; \par
+for you too may be a Manager some day.\par
+Avoid loud and aggressive persons; \par
+especially if they have business cards but no entertainment budget.\par
+\par
+If you compare your processor with others, you'll get bitter and twisted\par
+as there's always a faster processor on the market. \par
+(for you to steal from the Boss's machine when he buys it)\par
+\par
+Enjoy your achievements as well as your plans -\par
+Doubly so for the those that no-one knows about.\par
+\par
+Keep interested in your own career, however humble,\par
+but always lie on your C.V. \par
+\par
+Exercise caution in your Equipment Purchases,\par
+For Vendors are full of trickery. \par
+But let this not blind you to what virtue there is;\par
+Many persons strive for high ideals -\par
+Right up until they sell out.\par
+\par
+Be yourself.\par
+Especially, do not feign respect for technical incompetance.\par
+\par
+Neither be cynical about Benchmarking;\par
+for in the face of all aridity and disenchantement,\par
+they don't mean anything anyway.\par
+\par
+Take kindly the counsel of the years,\par
+but limit your intake of "When I worked with PDPs" stories.\par
+\par
+Nurture strength of spirit to shield you when the excrement and cooling device meet.\par
+But do not distress yourself with dark imaginings.\par
+That's the Boss's job.\par
+\par
+Many fears are born of stupidity and ignorance -\par
+Which you should be feeding with rumour and generalisation. \par
+\par
+Beyond a wholesome discipline, be gentle with yourself,\par
+but not too gentle when browsing porn.\par
+You know what I mean.\par
+\par
+You are a child of the Internet, no less an ICQer than others \par
+You have a RIGHT to your opinion,\par
+Even if it is crap.\par
+\par
+And whether or not it is clear to you, someone's broken into your machine \par
+and replacing your porn with Mandelbrot images.\par
+\par
+Therefore be at peace with Computing, \par
+Whichever platform you run or operating system you use.\par
+Even if it is Microsoft.\par
+Even if you forked out for Software Assurance\par
+Even if you thought Open meant Open.\par
+\par
+And whatever your trials and tribulations,\par
+in the noisy confusion of life, remember to get enough sleep.\par
+A talk by Richard Stallman is good for this.\par
+\par
+With all its limited download speeds, inflated specs and broken promises,\par
+it is still a reasonable experience mainly.\par
+\par
+Be cheerful. Strive to be happy\par
+\par
+Oh, and we just set fire to your desktop.\par
+\par
+=======================================================================================\par
+\par
+The Bastard Range of Wearable Computers\par
+By Simon Travaglia\par
+Posted: 18/05/2002 at 09:38 GMT\par
+\par
+BOFH 2002: Episode 11\par
+\par
+\par
+"Tell me about this wearable computing stuff?" The Boss asks, loafing around our office for a change instead of his own.\par
+\par
+"Crap," The PFY comments disparagingly. "It's usually so low-end it requires a stepladder to get to 'useable' and hugely proprietory to keep you hooked into the original vendor."\par
+\par
+"He's right," I'm forced to admit. "Everything I've seen has 'whizzy' features that revolve around some prerequisite handheld device, OR they're whizzy because the interface is something strange or unusual which has been relabelled 'intuitive'."\par
+\par
+"You mean like the the 'shoe' buttons?" The PFY adds.\par
+\par
+"Shoe Buttons?" The Boss echoes.\par
+\par
+"Yeah, your left foot is the left mouse button, and your right foot is your right mouse button," The PFY responds. "Tap on the toes of the left foot to use the left button, right foot to use the right button."\par
+\par
+"Well that sounds fairly resonable," The Boss burbles. \par
+\par
+"Unless you're on a crowded tube at rush hour..."\par
+\par
+"Well obviously you'd hav..."\par
+\par
+"..or playing football..."\par
+\par
+"I hardly think you'd b..."\par
+\par
+"...or having your shoes shined."\par
+\par
+"Yes, well..\par
+\par
+"But apart from being unusable in most occasions where a portable computer might be handy, it's a great interface!"\par
+\par
+"Yes. NO! No, I was thinking more something like this." The Boss burbles dragging a magazine article out of his pocket and unfolding it. From my viewport, it looks suspiciously like an article from one of the less reputable computing rags on the future of computing.\par
+\par
+"Ah yes, completely proprietary, and mostly useless..." The PFY comments, scanning the furry-toothed editor's comments.\par
+\par
+"But it's ideal for portable use! You can take notes when you're in transit!"\par
+\par
+"You mean like a pen and paper."\par
+\par
+"It also reminds you of your meetings!"\par
+\par
+"Like your secretary?"\par
+\par
+"That's not the point!"\par
+\par
+"Well it IS rather expensive," I mumble, pointing at the bottom line. "Three thousand quid for the base system, excluding docking modules. Hell,WE could slap together one for less than that.AND it would be made from generic parts so would interface better to your current system too!"\par
+\par
+"Could you?!" The Boss gasps, suppressing his unmanly girlish enthusiasm. "I only ask because I'm going to a technology directions meeting for the company in a couple of days, and it'd be nice to give them something to think about."\par
+\par
+(I.e. a quick game of who's got the whizziest system)\par
+\par
+"Well, it would only be a prototype.." The PFY responds.\par
+\par
+"That's OK, it's just to give them an idea," he chips hurriedly.\par
+\par
+"Well, we'd need to do some use case analysis with you, which might take some time to complete, given your busy sche.."\par
+\par
+"DO IT NOW!"\par
+\par
+"Ok, well what do you want it for?"\par
+\par
+"General note taking, portable office thingeys, um, oh, email, and maybe document stuff."\par
+\par
+"Right - and Operating system?"\par
+\par
+"Windows, uh, XP?"\par
+\par
+"Ok, User interface?"\par
+\par
+"Hm?"\par
+\par
+"How you would enter data?"\par
+\par
+"Sleeve keyboard, I think he mentioned," The Boss responds, pointing at the article.\par
+\par
+"Screen?"\par
+\par
+"Sub, uh miniature, eyepiece," he reads.\par
+\par
+"Right, Non Maskable input protection?"\par
+\par
+"Wha?"\par
+\par
+"A button in an out of the way place to make sure you don't accidentally hit CTRL-ALT-DELETE and reset your system."\par
+\par
+"Yes?"\par
+\par
+"Well, you put the power and reset buttons at a physical position you're not likely to touch often. Like Simon would put his reset button next to his wallet if he were using his machine at the pub."\par
+\par
+It's all fun and games till someone gets accidentally falls down a stairwell...\par
+\par
+"Oh. Well I don't know - What do you suggest?"\par
+\par
+"Reset switch in your groin area and power switch on your backside is fairly standard."\par
+\par
+"Yeah. Sure," The Boss replies cynically.\par
+\par
+"True Story," The PFY responds. "Groin because you tend to protect that rather well anyway, and backside because when you sit down at your desk, you don't need the portability any more."\par
+\par
+"Wellll, I suppose you have a point..."\par
+\par
+Three days later..\par
+\par
+"It's a little.. Chunky," The Boss blurts.\par
+\par
+"That's mainly the batteries, but we worked out a cool way to put them in your shoes, then used an ultra micro motherboard which straps onto your back - complete with ROM strap lock mechanism for security - along with rubberised touchpad keys and pressure pad material for the power and reset buttons. Strap it on and have a go!"\par
+\par
+. . ten minutes later.. \par
+\par
+"It's working!" The Boss gasps, gazing into his sunglasses. "Gosh, it boots fast!!"\par
+\par
+"It would do, as it has a solid state disk and clock chipped processor," The PFY burbles proudly. "Now try the office suite - I've synchronised your email, but if you want we could slap a bluetooth card in it and you'd be synchronised permanently when you're in the office."\par
+\par
+"This is fantastic!" The Boss cries delightedly. "It's brilliant, I can - wait a minute, the screen colour's gone all wonky. And... my back's getting hot."\par
+\par
+"Yes, like I said, it's a test rig. The heatsink's up against your body initially, but we can probably flip it around and let it cool through your clothes. The onboard graphics card probably doesn't like the heat either."\par
+\par
+"It's getting bloody hot!!!" The Boss gasps. "And I can't get it off!"\par
+\par
+"Yes, well, that's the ROM strap lock. Just reset the unit, select Low- Speed Operation so it runs cooler, then select Strap Lock reset and type in the password."\par
+\par
+"Ok, and what's the password?"\par
+\par
+"I've got it written down here somewhere..." The PFY mumbles, searching amongst the mass of paper which is his desktop.\par
+\par
+"Hurry!"\par
+\par
+"Well reset it, and change the speed setting!"\par
+\par
+"I can't find the reset button!!!"\par
+\par
+"The groin!" The PFY cries\par
+\par
+"I know, I can't find it!!!"\par
+\par
+"You're probably not pressing hard enough!!!"\par
+\par
+An hour later I grudgingly hand over the 100 quid I owe The PFY for losing the bet as to whether he could get The Boss to TELL him to kick him in the nuts. \par
+\par
+Still, it could have been worse, I could have paid per reset. While The Boss was still conscious...\par
+\par
+A bored admin is a very dangerous person... \par
+\par
+========================================================================================\par
+\par
+The Bastard goes email snooping\par
+By Simon Travaglia\par
+Posted: 02/06/2002 at 21:42 GMT\par
+\par
+BOFH 2002: Episode 12\par
+\par
+"But how do we KNOW that they're not reading our email?" a geeky type from payments asks The Boss over an evening beverage at the company bar.\par
+\par
+"Because the software doesn't let them" The Boss replies, dipping a tentative toe in technology for a second.\par
+\par
+"Yes, but how do we know that they don't change that software to allow them to do it anyway?" he persists.\par
+\par
+"Numbers," The PFY chips in sagely.\par
+\par
+"Numbers?"\par
+\par
+"Yes. There's what, 600 people working here - all getting email from people all over the country and the world. To look at their email, we'd have to go through each and every mailbox checking all their messages. We just wouldn't have the time to do it!"\par
+\par
+"Yes, but you could if you only wanted to read ONE person's mail."\par
+\par
+"Well I suppose we COULD, but we'd have to have some sort of reason. You know, something that would make us wonder what a person is hiding..."\par
+\par
+"Right, yes, OK! Well I suppose that covers it! Drinks anyone?" he responds hastily.\par
+\par
+***MENTAL NOTE TAKEN***\par
+\par
+... The next day dawns, and even The Boss is showing an interest - wanting to know if the person in question has a skeleton or two in the closet...\par
+\par
+"..and what you're looking for is files which look like they should be there, but really are out of place. Like.... THAT ONE!" The PFY explains, pointing at a folder on the screen.\par
+\par
+"PAYSHD.ZIP! Won't that be a Pay.... Schedule file or something? Hardly worth looking into.."\par
+\par
+"That's just what he wants you to think..," The PFY murmurs disparagingly. "But your average beancounter doesn't even know his trouser zip exists, let alone Winzip. No, this is progress! 20 megs of premo smut I'd wager!"\par
+\par
+"You don't know that!"\par
+\par
+"Know it - no. But after a while you get a nose for these things. That baby is just out of place. But don't take my word for it >clickety< >click<. Ah-HAH!"\par
+\par
+"What? It's just an encrypted zip file?"\par
+\par
+"Yes indeed, and encrypted file, full of smut!"\par
+\par
+"It could be ANYTHING!"\par
+\par
+"Yes, you're right. Our user has an encrypted ZIP file, which contains an encrypted zip file - and there's nothing suspicious about that..."\par
+\par
+"He might just be being cautious."\par
+\par
+"Oh, I think you're right there. But lets just see. First, unencrypt the contents >clickety< using his >clickety< NT password."\par
+\par
+"I thought passwords were stored encrypted!!!"\par
+\par
+"Normally, yes, but for our users, no,"\par
+\par
+"Why not?!?"\par
+\par
+"It'd make their using their email harder for a start."\par
+\par
+"You login to their accounts and read their email!!!?!?!"\par
+.\par
+"Of course not!"\par
+\par
+"Oh!"\par
+\par
+"No, we use the ADMIN tool to read their email - it's much faster."\par
+\par
+"So how having their password it make email reading easier?"\par
+\par
+"Oh, well, we can login as them and SEND email - you know, to get more email to read. For instance, I might send one from you to that woman from personnel you were chatting up last week - suggesting a quick candlelight dinner somewhere."\par
+\par
+"YOU SENT EMAIL FROM MY... What did she say?"\par
+\par
+"No no, I was just using it as an example."\par
+\par
+"Oh."\par
+\par
+"Mind you, I wouldn't develop a nervous twitch in your eye when you're talking to that big bloke from stores as he's definitely... not interested."\par
+\par
+"!" he half gasps.-0\par
+\par
+"Sorry about that, just testing the interface."\par
+\par
+"But my email is electronically signed with that key you got for me!"\par
+\par
+"Indeed it is, but THAT key in turn is signed by an authority just a whisker away from being what's known as a 'trusted' authority."\par
+\par
+"A whisker?"\par
+\par
+"Well.. more like a beard."\par
+\par
+"Which company was that then?"\par
+\par
+"Trusty Amal's Key Registry Services. Two quid for a 64-bit key issued for 50 years!"\par
+\par
+"Isn't 64 thingies a little bit.. insecure?" The Boss asks remembering something from technology nursery school.\par
+\par
+"In the banking world, yes, but for your correspondence, no."\par
+\par
+"Why not?"\par
+\par
+"Well it's a risk reduction thing."\par
+\par
+"How does it reduce risk?"\par
+\par
+"You don't have to take the risk that someone will torture it out of you some day. Sort of a proactive escrow."\par
+\par
+"So you were thinking of me the whole time?"\par
+\par
+"Of course."\par
+\par
+The Boss decides to cut his losses here and move on.\par
+\par
+"So why are we continuing looking through this user's files if we've found something?"\par
+\par
+"Well, it was too easy. And when you're a sad beancounter type, you're sort of expected to spice up your life with a couple of pictures of Barbara Cartland taking on a midget wrestler or two. No, this guy's really hiding something.."\par
+\par
+"Like what?"\par
+\par
+"Oh something that he doesn't want anyone to know about. Cutting Edge Porn, Dirty Stories, A Train Spotter mailing list!"\par
+\par
+"Isn't that illegal?!"\par
+\par
+"I don't know about the first two, but I'm fairly sure the last one is, and we should be able to find out.... >clickety< veerrrry shortly, as he's used the same password twice."\par
+\par
+"What is it?" The Boss gasps.\par
+\par
+"It's a pay Schedule file - amounts, people, etc. What a bust."\par
+\par
+"So what was he hiding?"\par
+\par
+"Well there are several different train timetables in his inbox.." I murmur.\par
+\par
+"I'll call the cops!" The PFY says.\par
+\par
+Two hours later the police have left, after being most unhelpful. Of course they questioned the bloke concerned, but with the liberal laws these days, people can get away with trainspotting without charge. Personally, I blame the government.\par
+\par
+Still, The PFY and I while away the intervening hours thinking up ways to cement The Boss's relationship with that bloke in stores, while the bloke concerned (after the first message anyway) whiles away the hours thinking up ways to cement The Boss in stores.\par
+\par
+It's a funny old world. \par
+\par
+=======================================================================================\par
+\par
+The Bastard Guide to Overclocking\par
+By Simon Travaglia\par
+Posted: 17/06/2002 at 17:45 GMT\par
+\par
+BOFH 2002: Episode 13\par
+\par
+So The CEO's been away visiting his kids up north somewhere, which means he'll be back with a couple of 'useful' suggestions from his pride-and-joy grandkid who's a junior furry tooth. (And has a solar emitting backside, if The CEO is to be believed).\par
+\par
+Sure enough, he's in the Boss's office within 1/2 an hour of having his coffee and Danish, paper and daily dump. Things look grim.\par
+\par
+Ten minutes later, it's even worse. It would seem that the Mini- Geek's concerned going for his overclocking merit badge and has misrepresented it as the upgrade-of-the-future to his grandpop. Worse still, The CEO thinks we can make a PII-300 into a P4-5000 just by changing the processor and adding a few wires and a fan...\par
+\par
+Sigh...\par
+\par
+"In THEORY it sort of works like that," I say, drawing a quick diagram on the Boss's whiteboard, "but in ACTUALITY, it's a lot more complicated than that. You've got CPU temperatures to consider - if a higher spec is supported by the board - along with bus speeds, interoperability with other components of lesser spec, not to mention power supply requirements!"\par
+\par
+"Yes, yes, but all this stuff has a certain amount of leeway built into it which we could take advantage of," The CEO burbles, having been fully indoctrinated into the ancient order of overspeccing. "We could save the company tens of thousands of pounds by deferring upgrades that you people ask for every year - money that could better be spent on strengthening the Corporate Image."\par
+\par
+By 'Strengthening the Corporate Image' he no doubt means getting back the Private Boxes the company used to have at major sporting fixtures where the company upper management could go to drink themselves stupid (well, stupider) at the expense of the shareholder.\par
+\par
+Ok, so I'm bitter and twisted at never being invited there myself, but I'm almost over it...\par
+\par
+"But think about the kit we're replacing!" I counter. "It's the oldest stuff - the stuff least likely to be clockable - and even if it were, the fastest supported processor is likely to only be a 5% speed upgrade."\par
+\par
+"Which is where the clocking comes in" The CEO burbles "My grandson says he can get a 25-40 % increase in speed, which means that we could get another one or two years out of these machines!"\par
+\par
+I'm a bit concerned - and not just because The CEO's going to put the kybosh on the nice little earner that The PFY and I have had going for a couple of years - performing the above upgrades and then selling them to the company via a third party company as new boxes...\par
+\par
+. . . \par
+\par
+"I always thought they'd get suspicious that their 'NEW' machine had a 5.25 inch floppy and a turbo light, but apparently not," The PFY comments later as I tell him about the potential problem and it's effect on one of our lesser publicised revenue streams. "-But there's no accounting for intelligence."\par
+\par
+"I always told them that it was there for the backward compatibility module."\par
+\par
+"Backward compatibility?"\par
+\par
+"Yeah - I added 25 quid to the price and made it a line item..."\par
+\par
+"Smooth. So this is going to go to crap if overclocking comes in?" \par
+\par
+"Yes." \par
+\par
+"So we just stuff the overclocking up then?"\par
+\par
+"Can't - The CEO's grandspawn's going to come in and do it..."\par
+\par
+"The little bastard. I suppose they're going to PAY him too."\par
+\par
+"Yes, a 'consultancy fee' to the little rugrat's college fund."\par
+\par
+"Hmmmm," The PFY replies, sitting down to think.\par
+\par
+. . .\par
+\par
+"And so you put this heat transfer paste on the heatsink which improves its ability to conduct heat away from the CPU, allowing us to increase the processor speed at the same time" the Mini-Geek burbles to his ancestor.\par
+\par
+"Until you go too far, of course," The PFY adds. "At which time the machine becomes unusable."\par
+\par
+"No, because you put this thermal cutout device in," the little rat blurts, pointing out a small object nestling against the CPU heatsink, "which powers the machine down when it gets too hot."\par
+\par
+"Well, it sounds like you've really thought this out," The CEO chuckles happily "so I'll leave you to it. Once you've done the first 10 machines we'll see how well they run, and maybe do some more upgrades."\par
+\par
+With that, he trundles out while The Boss brown-noses him about how his grandspawn is a shiny example of the younger generation, and isn't it a pity they're all not like that.\par
+\par
+"The thing I find strange," our latest consultant mutters sneakily, once the room is clear, "is that the machines already seem to be clock- chipped."\par
+\par
+"Really?" The PFY asks, faking surprise\par
+\par
+"Yes. It looks just like someone slapped a 'PIII-500' sticker on the front and just cranked the speed to dodgy levels."\par
+\par
+"You're joking!" I cry, "You mean the vendor ripped us off?!!!"\par
+\par
+"The Vendor? You mean the Company which doesn't exist, but which shares the same Post Office Box as the Limited Company that YOU trade under?" the Mini-Geek smirks a little too knowingly.\par
+\par
+"How much?" I feel obliged to ask.\par
+\par
+"50 quid," he blurts smugly, in the manner of a true professional.\par
+\par
+"Done."\par
+\par
+"..per machine," he adds.\par
+\par
+A slight flicker of pride crosses The PFY's face at this point, leading me to believe that there's more rotten in the state of Denmark than the cheese..\par
+\par
+"Uh... Done."\par
+\par
+"..In the building." \par
+\par
+"Ok, so how much is that?" I ask, not wanting to give anything away.\par
+\par
+The runt responds with a number that is too accurate to be coincidence - right down to the boxes marked "Analog Phone Spares" hidden in the back of the storeroom, and I know that something has to be done.\par
+\par
+"It's a fair cop guv", I cry. "And I suppose you'll be wanting cash."\par
+\par
+"Would that be from your hidden cash-stash?" The PFY asks, feigning innocence.\par
+\par
+Later, at the hospital...\par
+\par
+"I blame myself of course" I blurt to the Boss between sniffles "Who could have know that pallet of paper was so unstable!!!"\par
+\par
+"Well, don't worry yourself - you weren't to know they'd let themselves into the store after hours."\par
+\par
+"Well is there anything I can do."\par
+\par
+"At this stage the doctor believes they just need a bit of rest - a night trapped hasn't done wonders for their mental state."\par
+\par
+"Poor bastards," I murmur, scribbling a reasonable rendition of the House Doctor's signature under the instruction for an aggressive laxative treatment on The PFY's sheet. "Poor, poor bastards."\par
+\par
+Play with fire, get burnt. \par
+\par
+========================================================================================\par
+\par
+BOFH and the God of Workplace Harmony\par
+By Simon Travaglia\par
+Posted: 29/06/2002 at 12:13 GMT\par
+\par
+BOFH 2002: Episode 14\par
+\par
+"..and so we're looking to identify problems in the workplace that could lead to illness, injury or personal discomfort," the Human Resources Health and Safety Droid burbles happily to the majority of the IT Dept.\par
+\par
+Sigh. It's the same thing every year - we're obliged to attend an Occupational Health and Safety Course and identify risks in our environment that need to be addressed. Failure to attend means you're marked 'absent from school' and get docked a day's pay, thanks to the stooley nature of the HR Droid concerned. The rows of vacant faces are a testament to how well this works after the low attendance last year...\par
+\par
+"Obviously, this is good for both you and the company," The Droid continues, "because we reduce the incidence of accidents to you and lost revenue to the company!"\par
+\par
+"Didn't we already do this?" The PFY murmurs quietly, remembering something similar from days past.\par
+\par
+"Yes," I respond. But it hasn't escaped the attention of the HR department that whilst accident reports for us two remain at a static ZERO, accidents in our area just keep increasing."\par
+\par
+"Oh. So you mean they wanted us to identify areas which put OTHER people at risk?!?"\par
+\par
+"I believe that was the purpose, yes."\par
+\par
+"Ah! Now I get it! I did think they were paying a lot more attention to our wellbeing than they normally did."\par
+\par
+"Indeed."\par
+\par
+"DO YOU HAVE SOMETHING TO SHARE WITH EVERYONE?" the HR Feeb snaps in a distinctly annoyed manner.\par
+\par
+"Well, yes," The PFY replies. "This identifying danger areas - would this be like the Danger of getting shut in a tape safe over the weekend?"\par
+\par
+"Well YES, I think that would be a valid danger!" he responds, pleasantly surprised that someone was listening for once. "And so from that danger, or potential accident, we would work back to the cause, and ways to prevent it."\par
+\par
+"Oh. OK, well I suppose the cause would be annoying me, and ways of preventing it would be locking my office door and taking the phone off the hook."\par
+\par
+"No, I think you misunderstand. We're talking about ways to prevent the accident occurring - or getting worse - like perhaps fitting a safety release to the inside of the door."\par
+\par
+"Oh," I interject. "We actually used to have one of those, but it was removed to ensure that in the unlikely event of someone being trapped in the tape safe it would provide enough air to sustain life."\par
+\par
+"You mean the safe is airtight?"\par
+\par
+"Well it HAS to be airtight to work - otherwise the heat of a fire would penetrate the safe and destroy the media."\par
+\par
+"Ok, but thinking back a step, wouldn't the safety release remove the need for an air hole?"\par
+\par
+"Ordinarily yes," I concur, "but in the UNLIKELY event that a large filing cabinet was ACCIDENTALLY leant up against the outside release mechanism, it would still provide the air needed for the person inside."\par
+\par
+"I think you're multiplying slight probabilities here, and the likelihood of this happening as you described is extremely small."\par
+\par
+"But still a possibility," The PFY responds darkly.\par
+\par
+"But not one which would lead to anyone endorsing the removal of a safety feature in a device. Tell me, who removed the lever concerned?"\par
+\par
+"I did," The PFY responds tersely, obviously thinking back to that couple of hours of feverish activity before the torch batteries ran out...\par
+\par
+"Well it's not recommended, and as an Official Safety Agent of the Company I'm required to ask you to replace it - but how would someone even get trapped in a tape safe?" the HR Droid asks, really starting to labour the point now. "Surely it has shelves, and tapes, in it?"\par
+\par
+"Well there's no point in putting tapes in it if they're not going to be safe from fire," I respond, deciding on the recursive approach, " what with that air hole in it and all." \par
+\par
+"But if you put the door release back, then replace the shelves, there'd be no possibility that someone would get locked in the safe!!!" he cries triumphantly.\par
+\par
+"But then there'd be no air in the safe," The PFY blurts, playing dumb.\par
+\par
+"You don't need it!"\par
+\par
+"You do if you're trapped in it over a Bank Holiday Weekend just because you won too many games of Unreal Tournament and your Supervisor is a poor sport!" The PFY replies.\par
+\par
+Perhaps I'm being oversensitive, but I may have detected a slight touch of annoyance in The PFY's voice - almost as if he still bears a grudge about the lost weekend last year. I momentarily consider advising him to just let it go, but decide to play it safe and say nothing.\par
+\par
+"But you can't get lock in there if the lever and shelves are in there!"\par
+\par
+"I'm not sure I follow you," I say, joining the discussion..\par
+\par
+"It's simple," he explains, going to the whiteboard and drawing pictures frantically.\par
+\par
+The rest of the audience look on silently - knowing what this means - the God of Workplace Harmony requires a sacrifice... \par
+\par
+"I'm not sure I follow you either," one of the IT geeks speaks up, remembering only too well the reduced pay packet he encountered this time last year. "Perhaps we should actually see it in-situ, as it were."\par
+\par
+. . .\par
+\par
+>SLAM!<\par
+\par
+. . .\par
+\par
+God of Workplace Harmony appeased, good fortune soon to follow... \par
+\par
+========================================================================================\par
+\par
+The Bastard Vending Machine\par
+By Simon Travaglia\par
+Posted: 09/07/2002 at 20:29 GMT\par
+\par
+BOFH 2002: Episode 15\par
+\par
+I'm a little tired and, I'll admit, cranky after a hefty night with a Slave Trader who was trying to get me to outsource our IT. Admittedly, he for some reason (i.e. The PFY told him) thought I was the HR Manager for the Company, AND didn't realise that we outsourced most IT staff anyway. But the truth didn't come up until much later in the piece, by which time we were great mates, so no real harm was done. Except me hurting my knee getting out the window after popping off to the toilet and not coming back, of course....\par
+\par
+Well, it was that or get the rather hefty bill...\par
+\par
+Anyway, I'm not in the mood for distractions, upset, nor the sound of The PFY beating the living crap out of the vending machine. True, it ate his coins without the customary dumping of a food item with the health potential of ground-zero Chernobyl - but that's not the point.\par
+\par
+"It'll fall on you," I warn him, observing The PFY trying the rock and roll approach.\par
+\par
+"No it won't - it's got bricks in it for stability!" he responds smugly.\par
+\par
+"If they were installed for stability, they wouldn't fill it all the way to the top," I feel compelled to assert.\par
+\par
+"You mean they're installed..."\par
+\par
+"...as a deterrent, yes. I mean all you'd need is a couple of gruesome fatalities and the word would get around. Even a nasty crush injury or two would do. Before you know it, people start being a bit more careful..."\par
+\par
+"I... Oh sure.." The PFY says, doubtfully.\par
+\par
+"Right, I'm lying. And yet, they never seem to bolt the machines to the floor - 'for stability' do they?"\par
+\par
+"But surely that would be illegal?"\par
+\par
+"A fine point. It would be illegal if they made the machines easy to tip over. This way, it's just misadventure - you rocked a machine with a 'Do not rock' warning sign on it. In fact, if the company was progressive thinking, they'd have the word MISADVENTURE embossed in reverse into the front panelling, so the coroner can just read his findings off the forehead of your corpse."\par
+\par
+"Well I feel like the thing is out to get me. Anyway, why don't YOU never have any problems with the machines!?!"\par
+\par
+"Why? Because my needs are simple, unlike yours and the masses of other automatons out there. Let me show you!"\par
+\par
+\par
+I wander over to the machine for a demonstration.\par
+\par
+"You" I say, indicating the control panel "choose a popular carbonated beverage with the number 12, costing you the princely sum of one pound. Often, instead of getting the bottle of your choice, you will in fact get a bottle of carbonated water - with a flavour that was popular in the late 80s - FOR A DAY - and which the vendor probably has half a warehouse of, which he is slowly selling to the unsuspecting market."\par
+\par
+"Yes, I think there's something wrong with the 1 button," The PFY comments, "a debounce thing, so when you press it once, it sometimes presses it twice."\par
+\par
+"A button problem, of course!" I respond drily. "The machine sells 14 products and there are 16 keys, including A-F, on the keypad. Theoretically, you could just press one button to get your product. Instead you press two keys, both digits - not a number and a digit - to get your item. And the first key you always press, for every item has a debounce problem. And a product that no-one in their right mind would buy."\par
+\par
+"Well it's the key most used," The PFY explains, "which means that it's bound to get some... I CAN'T BELIEVE THEY'D DO THAT TO ME!!"\par
+\par
+"They're complete bastards!" I explain. "And you know sometimes, when the machine swallows a coin and doesn't register it - that's built into the ROM as well. It's called the 'Sucker Factor' and is an automatically generated number between 1 and the factory-set limit of 500. When the transaction number comes up, the coin gets swallowed, the number regenerated, and the machine continues as normal - until the new number comes up"\par
+\par
+"You're joking!"\par
+\par
+"Not at all. Some vendors reduce the transaction number to as low as 100."\par
+\par
+"The bastards! But why doesn't someone do something about it?"\par
+\par
+"Because most companies have a Service Person who's built like a minibin full of concrete - on legs - who deals with complaints. If they're really pressed, they replace the machine with a facelift model - after reducing the Sucker Factor upper limit number of course."\par
+\par
+"Back to my original question - how come you never get stung?"\par
+\par
+"Because as I said, my tastes aren't so mundane," I say, slipping five quid into the slot and pressing F F F.\par
+\par
+"Bugger me!" The PFY cries, as a cool can of Lager pops out of the slot. "How did you do that?"\par
+\par
+"The benefits of having met Stan, the aforementioned Service Person," I respond. "We had a great conversation, where he filled me in on what was what in the world of Vending Machines."\par
+\par
+"I think I fancy a lager myself then!" The PFY burbles, slapping five quid down the spout.\par
+\par
+"WHAT?! It says it's 10 quid for a lager!!!"\par
+\par
+"Yes it doubles in price every time you buy a can."\par
+\par
+"The Bastards!"\par
+\par
+"Oh no, Stan did that at my request. I mean, if I could get cans for \'a31.25 continuously, I'd probably drink them all day every day. This provides a negative incentive."\par
+\par
+"I wish you'd told me that before I put my money in," The PFY sighs. "Lend us FIVE quid?"\par
+\par
+"Sure" I respond, handing over the dosh.\par
+\par
+. . . Later that night at a pub in East London . . .\par
+\par
+"So I think we can reduce the Sucker Factor limit to 50, only put two of the more popular drinks in at refill time, and don't reset the Lager Price counter till next refill. How's the Nasty Cola going."\par
+\par
+"Still six pallets to go," Stan replies.\par
+\par
+"Yes, but we're getting there," I say. "We're getting there..." \par
+\par
+=======================================================================================\par
+\par
+BOFH and The Salesbloke\par
+By Simon Travaglia\par
+Posted: 19/07/2002 at 13:38 GMT\par
+\par
+BOFH 2002: Episode 16\par
+\par
+So I'm at a Telecoms conference while The PFY minds the fort back at Mission Control. \par
+\par
+And roger me senseless with a vampire connector if I'm not sitting next to a bloke who's just dying to sell me something.\par
+\par
+He's so easy to spot they should slap photos of him on the sides of Chinese Aircraft as a USAF navigation aid. The silver suit was a dead giveaway, as was the keenness to sit next to someone he'd spotted arriving alone...\par
+\par
+"Amazing stuff this technology isn't it?" he whispers furtively, going for the back-entrance approach of pretending to be a fellow professional.\par
+\par
+"Technology?" I ask vacantly, playing along.\par
+\par
+"Yes, V-O-I-P," he mouths, using one of the crappest acronymns available on the\par
+market to date.\par
+\par
+"VOIP?" I ask vacantly. "You mean those planes that can take off like a helicopter?"\par
+\par
+"No, that's VTOL. I mean Voice Over I.P!"\par
+\par
+"IP?"\par
+\par
+"Yes, IP!" he replies, drawing an acronymic blank and deciding to bluff.\par
+\par
+Well, two can play at the idiot game!\par
+\par
+"Oh. That sounds a bit technical to me. I only came here because they said they were going to talk about how to reduce our phone bills."\par
+\par
+"THAT'S PRECISELY WHAT V-O.." the salesbloke begins excitedly.\par
+\par
+"..And there was lunch," I interrupt. "I remember they said there was a lunch thrown in! I never miss out on a good lunch - the chance to mingle, network, and maybe get some pointers from the real techno boffins!"\par
+\par
+He can smell blood in the water, but just wants to check the type before making his pitch.\par
+\par
+"And what do you do?"\par
+\par
+"Oh, I'm an IT Director."\par
+\par
+"Really, of....?"\par
+\par
+"The Dnebonk Group. A.. Danish company. It's very small here at the moment, but we're looking at expanding our operation into the UK, branches all over the place, that sort of thing. Anyway, they say we're going to be wanting to look at some leased thingies, a VPM or something, and some rooting things."\par
+\par
+"Really?" he drools, thinking of his potential commission and end-of- year bonus cheque\par
+\par
+"Yes, and I want to make sure I get the right stuff - I'm a bit of a duffer at this actually - as I have to get everything right before I put the setup budget plan in..."\par
+\par
+"Really? How many people will be situated in the off..."\par
+\par
+"Oh just five or so of us for now - But 30-40 about the place by year end."\par
+\par
+"I see. And who does your installation?"\par
+\par
+"Well I did," I admit, with a liberal coat of pride. "We have a dialup network. Obviously I'd get a network firm in when we get bigger, but for now we just use the local hardware suppliers."\par
+\par
+"And you have a maintenance contract?"\par
+\par
+"With Dixons? No, not yet. Do you think I should get one?"\par
+\par
+"You buy your stuff retail?" he gasps.\par
+\par
+"Well yes, for now - it's just easier. The company doesn't mind too much at the moment because they're still getting all the accounts set up, so it's pointless waiting till all that's done to buy stuff. So they just send me Bank Drafts till we're up and running. And it's small potatoes in the scheme of things - the company's loaded."\par
+\par
+Before I know it I've been dragged out of the conference like a shot and into an environment more suited to decision-making. The snug bar of the nearest drinking establishment.\par
+\par
+"For as little as, er, 50 quid per machine, we could get you some state-of-the-art.. thinwire cards and some multiport repeaters to hook them all up."\par
+\par
+"50 quid, is that cheap?" I ask naively whilst trying to get another pint in before he gets to his next item of computer scrap.\par
+\par
+"Well you won't see many for that price these days," he responds.\par
+\par
+. . two hours and seven pints later ...\par
+\par
+"Right, and what about that bundle price on that Operating System stuff. We buy 50 OS2s for 100 quid apiece, and you'll give me 20 quid trade in on my old Operating Systems. That saves me ?"\par
+\par
+"1000 quid!" he burbles. "AND, I'll throw the manuals in for free!!"\par
+\par
+I suppress the urge to say "into the bin" and instead nod my head appreciatively. The only concern I have is that I'm starting to like the idea, which can only mean one thing - I've had too much to drink and I need backup.\par
+\par
+"Right, well, I think I'd better get my technical bloke in to give it the once over," I mumble.\par
+\par
+"Technical bloke?" my salesguy cries unhappily. "I thought YOU were the technical bloke!"\par
+\par
+"Yeah, but we've got this young bloke in who installs all the stuff." I slur, "Crash hot at the screwdriver work, he is. Only he's probably going to need some pointers on where all the pieces go. But once he knows what he's doing, he's bloody aces!"\par
+\par
+I get The PFY on the cellphone and quicker than Richard Stallman can say "Free Beer" he's on the premises with a pint in his hand.\par
+\par
+"This is my technical assistant who they sent over from Norway just last week. Doesn't speak a word of English!"\par
+\par
+I don't know why I threw that in - and regret it immediately - but once it's out there what do you do?\par
+\par
+"Norway?!" the Salesbot asks - "I thought you said the Company was from Denmark."\par
+\par
+"Yes, the COMPANY is," I respond, recovering from the oversight as soon as possible, "But the support guys are from Norway. Isn't that right Sven?"\par
+\par
+The PFY makes some dubious grunting noises and nods his head mindlessly for a bit until our Salesperson is assured that he's unlikely to constitute a threat to the sale.\par
+\par
+"I did a bit of freelance work in Norway years ago," The Salesbloke blurts, really starting to annoy me now, "and I've still got a bit of the lingo under my belt! Hey, ..."\par
+\par
+He proceeds to try and establish a protocol for exchange with The PFY, but that Comms circuit is just NEVER going to be established, so I have to think fast.\par
+\par
+"He only speaks Croatoinuit and a little bit of Portugese-Danish. " \par
+\par
+"Inuit? That's Eskimo isn't it?"\par
+\par
+"Something like that. Which is why you need to SHOW him how to install things. But once he's got the hang of it there's no stopping him."\par
+\par
+"Well how do you talk to him?"\par
+\par
+"Well he's trying to learn English - but he's only mastered a few of the more common phrases."\par
+\par
+"That's terrible. You'd think they'd train him a bit better. Another Lager?"\par
+\par
+"Go on then," The PFY burbles, slapping his empty pint on the table.\par
+\par
+"That's one of the more common phrases?!"\par
+\par
+"It is in our company!"\par
+\par
+... Three hours, 8 pints, a curry, a cigar and a strip club later...\par
+\par
+"Well it certainly has been a great day!" the Salesbloke says, pulling out an order form and writing some hasty line items on it. Leaving room for an extra zero or two in the qauntity column, I note. "How about we sign this stuff off and I'll process it tonight before I go home for you?"\par
+\par
+"Sounds great!" I slur, leaning on The PFY for support. "I'll give the signing guy a call."\par
+\par
+"Signing guy? "But I thought YOU could sign orders?"\par
+\par
+"Nah, he can only approve them." The PFY responds, having 'learnt' English at an astounding rate over the course of the night. "But the accounting bloke has to sign orders for him. Hang on, I'll give him a call - where are we?"\par
+\par
+I point out the street name and The PFY dials The Boss's home number and proceeds to do Swedish chef impressions down the line. \par
+\par
+"Buludddy nice bloke," The PFY mumbles to us. "But doesn't speak a word of PortugeseThingy. With you in a mo."\par
+\par
+. . . Three more hours, uncountable beers, curries, cigars etc later . . .\par
+\par
+It's hell being a computing professional. \par
+\par
+=======================================================================================\par
+\par
+The Bastard School of Recruitment\par
+By Simon Travaglia\par
+Posted: 05/08/2002 at 17:35 GMT\par
+\par
+BOFH 2002: Episode 17\par
+\par
+"Well you do seem to have a bit of a Manager exit epidemic on your hands," The Slave Trader agrees as he looks over his spreadsheet. for the past year or so. "I myself have placed four of your managers - and I'm assuming that we're not the only recruiting agency that you've looked to."\par
+\par
+"No," the The Head of IT concurs. "So we thought we'd talk to you about what we might be doing wrong in the selection process - why we seem to end up with, well, unsuitable candidates."\par
+\par
+"I think you'll find 'technical ability' is a key point," I respond, scanning down our Slave Trader's list of desirable attitudes, "followed closely by 'attention to detail'."\par
+\par
+"Yes," The Head of IT concurs, happy that the meeting doesn't seem to be going off on any tangents. "I feel it's important to have someone who's both technically competent and is able to recognise the smaller details which can often mean the difference between a well executed plan and a complete abortion!"\par
+\par
+"I couldn't agree less!" The PFY adds, nodding.\par
+\par
+"Beg Pardon?" The Slave Trader asks.\par
+\par
+"He means that we'd hope that the person really knew what they were doing..." The Head interprets.\par
+\par
+"Ah no, I think you'll find that we're concerned about the candidate knowing too much - or at least thinking they do," I correct.\par
+\par
+"What?"\par
+\par
+"Look at it this way. If you have a Manager who has no experience of I.T. they're more likely to take the advice of a professional - You know, like sex. Whereas, if we get someone who's experienced - or at least BELIEVES they're experienced, they're more likely to make huge and glaring mistakes because they're not aware of the potential problems."\par
+\par
+"And be crap in bed," The PFY adds.\par
+\par
+"So you're saying that a technical manager is more likely to make errors of judgment?" the Slave Trader gasps.\par
+\par
+"Of course! Their experience of computing, etc, is based on the past - on the way computing was when they were using it. Which, in a technical manager, is years ago when VAXes ruled the world, and no help here and now, when Microsoft stalks the planet."\par
+\par
+"I see. But what's wrong with 'Attention to detail'?"\par
+\par
+"'Detail' is always the irrelevant stuff, not the important things."\par
+\par
+"Irrelevant stuff. Such as?"\par
+\par
+"Oh you know, Price, Customer Satisfaction, Integration into existing Infrastructure. All stuff that means nothing in the real world of computing"\par
+\par
+"As opposed to 'Important Stuff' like?"\par
+\par
+"Important stuff like the colour of the front panel, how many lights there are, if it's got a cool name like INTERCEPTOR or something similar. That sort of thing\'85"\par
+\par
+The meeting's interrupted by an urgent call for the The Head of IT, which, judging by his late night phone bills, is probably from Russian Bride Inc.\par
+\par
+"I somehow think that your Head of Department is after people who fit the bill a bit better than that..." the Slave Trader bubbles, sucking up big time.\par
+\par
+"So who are you going to listen to - the guy who pays you a finder's fee or the guy who ensures you keep getting them regularly?"\par
+\par
+"Good Point. More of the same, coming right up!"\par
+\par
+"BUT," I add. "We're after a particular sort of mindless automaton, and not just anyone. Specifically, we're after someone who knows bugger all about computing, but has enough credentials to look convincing - should someone question their Resume at a later date. Say, after a budget blowout."\par
+\par
+"Ah, you want to shaft the candidate, and not the selection committee?"\par
+\par
+"Precisely!"\par
+\par
+"And what about your Head of IT?" the Slave Trader murmurs, keeping his voice low and pointing out the door, "I'm sure he'd have something to say about this."\par
+\par
+"Yes," The PFY concurs. "Most likely 'What?', 'Where am I?' and 'Is it lunchtime yet?'"\par
+\par
+"What?" the Slave Trader asks, almost interviewing for the position for himself \par
+\par
+"Our criteria for The Head of IT is somewhat less stringent than that for IT Managers," The PFY explains.\par
+\par
+"I see. So, back to the IT Manager Role, you want someone who's absolute crap, looks reasonable on paper, and won't cause too much trouble."\par
+\par
+"Exactly."\par
+\par
+"Well I don't have any MCSEs on my books at the moment, but I could ring around."\par
+\par
+"Excellent!"\par
+\par
+"What?" The Head asks limping back into the office after splintered phone sex, which isn't quite as disgusting as it sounds.\par
+\par
+"He's checking what they have on the books at some other branches," The PFY replies.\par
+\par
+. . .\par
+\par
+"How about a bloke with extensive experience in the Unix environment, DBA certification in Oracle and Sybase and a Masters degree in Computing?" The Slave Trader asks.\par
+\par
+"Does he have an MCSE?" I respond.\par
+\par
+"Uh, no."\par
+\par
+"What about Operational experience of VMS, Dec Unix, DG's MVS, OS2 and Pick?" The PFY asks, churning out deadwood like a true professional.\par
+\par
+"No"\par
+\par
+"Probably not the best then."\par
+\par
+"Right. What about ... A bloke with a background in airline control systems, wants to do MCSE, proven experience in ... uh ... ZX81 programming."\par
+\par
+"FANTASTIC!" The PFY cries.\par
+\par
+"Where were we?" The Head asks. "I thought we were looking for a computing person!"\par
+\par
+"He's ideal!" I Pinnochio away. "He's got experience with Legacy hardware - which we have, PLUS Control systems, and he's up with Microsoft. I think we should grab him while we can!"\par
+\par
+"Weellll, if you're sure.." The Head burbles, obviously realising that argument will cut into his lunch hour and he'll miss out on seconds...\par
+\par
+Two days later...\par
+\par
+"What's that then?" our new Boss asks.\par
+\par
+"It's technical," The PFY responds, "and would take some time to tell you about. All you really need to know is that you put your cup under here, push the button and coffee comes out."\par
+\par
+"Excellent. Is it one of your servers..."\par
+\par
+"Indeed."\par
+\par
+"A nice colour too, fits in well."\par
+\par
+"We strive to please...." \par
+\par
+=======================================================================================\par
+\par
+BOFH and The Art Of Brand Management\par
+By Simon Travaglia\par
+Posted: 11/08/2002 at 08:57 GMT\par
+\par
+BOFH 2002: Episode 18\par
+\par
+"I've got some concerns," The Boss says, trundling into the office after the noontime feeding frenzy that the rest of the world calls lunch.\par
+\par
+"Concerns!" The PFY gasps. \par
+\par
+"Yes. I was talking to some blokes this lunchtime, and they said that we're unapproachable."\par
+\par
+"Unapproachable?" The PFY echoes. "Us?"\par
+\par
+"Yes. They say that we're not really part of 'the team' - that we think we're above them?"\par
+\par
+"That's only because we are," I respond, trying to quell his angst.\par
+\par
+"Wha? No, we're not! We're all working for the same Company - we're all on the same side! We should be working WITH people, not against them!"\par
+\par
+"Of course, you're right," I respond, seeing the futility of arguing. "And I'll make a note of it for the future."\par
+\par
+Before The PFY can add something derogatory, The Boss blunders on.\par
+\par
+"I think this is more than a note situation! I think we should DO something!"\par
+\par
+The thought of a Company group-hug flashes into my head, including the image of me wedged between the sweaty mailroom bloke and the woman from accounts receivable who uses a gallon of perfume a day.\par
+\par
+The Boss's monologue is interrupted by the sound of a large bottle of highly flammable cleaning liquid smashing at his feet...\par
+\par
+"Woopsy," I cry, sneakily reaching for a box of matches, "Clumsy old me."\par
+\par
+"No harm," The Boss burbles on. "So anyway, I thought maybe we should do something about Branding."\par
+\par
+"Branding?" I ask, match poised against the striker behind my back. "You mean as in burning a mark onto any user that complains?"\par
+\par
+"No," he chuckles. "Corporate Branding. Shirts, Caps, that sort of thing."\par
+\par
+"Freebies you mean," The PFY blurts, warming to the idea - which is what The Boss will be doing if he doesn't hurry up.\par
+\par
+"Yes, but with the Company Logo, our IT Department Logo - to show we're part of the organisation - and some dinky catchphrase to use; you know, like 'IT for everyone'."\par
+\par
+"How about 'Giving I.T. to you'."\par
+\par
+"I suppose it could work," The Boss responds, mulling it over.\par
+\par
+"What about SLIPPING I.T. to you?" I add. "That way the image is that we're doing it quickly and efficiently."\par
+\par
+"WHAT ABOUT: SLIPPING I.T. TO YOU FROM BEHIND!!!" The PFY cries. "For the people who like the quick and efficient, but would also like it dont out of hours."\par
+\par
+"Slipping I.T. to you from behind.... It does have a certain ring to it.. Tell you what, I'll see what the IT Head says."\par
+\par
+"You mean run it up the flag pole, see who salutes?" The PFY says.\par
+\par
+"Yes."\par
+\par
+"Install it in the BIOS and see how it POSTs?"\par
+\par
+"Huh."\par
+\par
+"Chuck it on the Bus and see what recognises it?"\par
+\par
+>ZZZZZZERT<\par
+\par
+"Sorry about that", I say, wheeling The PFY away. "But you really shouldn't mention free stuff around him - he just gets all excited. He'll be fine in an hour or so. So yes, I think passing it by the IT Manager is probably a good idea as he needs all the brownie points he can get at the moment."\par
+\par
+"Really, why?"\par
+\par
+"Well, his contract's up for renewal, and the Board are a very peculiar lot. Anyone who could WOW them with an idea like this is bound to get reappointed."\par
+\par
+"Reappointed?" he Lady Macbeth's like a trooper. "Really?"\par
+\par
+"Oh yeah, they LOVE that sort of innovation. Anyway, it's a great idea. In fact, you might even suggest to the Head that we do it as a Logo COMPETITION for the staff - and the Board could pick the best entries at lunch?"\par
+\par
+"Yes, that is a good idea..." he murmurs, switching down to power save mode to come up with a sneaky plan...\par
+\par
+. . . 1 hour later . . .\par
+\par
+"Well I've talked to the Head," The Boss lies, "and he thinks the idea's great! So if you could pass it quietly around the department, for say, Friday - everyone to come in with their T-Shirt and Logo and the best one wins a box of Champers! Oh, and the Head is fairly busy at the moment, and doesn't want to be disturbed with this, so if you could just avoid mentioning it in his presence, he'd be chuffed."\par
+\par
+Like Lambs to the Slaughter...\par
+\par
+. . . Friday Dawns . . .\par
+\par
+I bowl into office early - in my "Slipping IT to you" shirt, passing by The PFY in his "..from behind" edition and pausing briefly at the coffee machine to grab a morning brew. \par
+\par
+Our cabling contractor, who isn't officially onsite this month, NOR part of the staff, bowls up in his "For those who like IT rough!" T-shirt and registers a vote for his particular favourite on one of the Helpdesk staff - "Doing IT on your desktop".\par
+\par
+The Boss, between times has muddied the water by suggesting an alternative to the IT theme, centreing around the "Talk to someone who knows" theme, which has borne some fruit, namely - in order of excellence: "Talk to someone who cares", "Go call someone who cares" and finally "Go call someone who gives a Shit" - obviously hoping to appeal to the younger audience.\par
+\par
+"So, how do you think it's going?" The Boss asks, chuffed at the turnout.\par
+\par
+"Good, but where's the Head today?"\par
+\par
+"Oh, he's on holiday, but left me in charge of the arrangements. So what do you suggest - I get the board together and we all meet them at lunch?!"\par
+\par
+"A Scorcher, and good as done!" I respond.\par
+\par
+Now, to compose that message to the Slave Traders... \par
+\par
+======================================================================================\par
+\par
+BOFH: PFY's Sulk\par
+By Simon Travaglia\par
+Posted: 31/08/2002 at 09:00 GMT\par
+\par
+BOFH 2002: Episode 19\par
+\par
+IT WOULD APPEAR that the Boss has said something to upset The PFY. And me, the heartless android bastard that I am, didn't notice this and intervene on his behalf as a good supervisor would...\par
+\par
+Sigh.\par
+\par
+So now The PFY's in one of those moods that REEEEAAALLLLY puts a strain on the old office sanity situation.\par
+\par
+"What are you sulking about then?" I ask, exuding the kind of compassion you only read about in South American prison systems.\par
+\par
+"Nothing," The PFY responds - going for the 'I'm-the-only-person- who-EVER-does-ANYTHING-around-this-place-honestly-I don't- know-why-I-bother' approach.\par
+\par
+Which, as far as I'm concerned, is about as welcome as a Microsoft licensing amendment.\par
+\par
+"Ah, so it's just the usual hard-done-by-overworked-plaything-of-the- ruling-classes thing then?"\par
+\par
+"No, I've had enough! And I'm thinking about a career change!" he responds, throwing several of his toys out of the proverbial cot...\par
+\par
+"Really? Well, you know what I say - Harder than a lane change, but easier than..."\par
+\par
+"...a sex change, yes, you've told me."\par
+\par
+"And you get to keep your clothes and friends!!!" I add, bringing a little humour to the situation.\par
+\par
+"Ha. Ha," The PFY mutters.\par
+\par
+Trouble in Paradise alert!!!\par
+\par
+Now don't get me wrong, working with The PFY is every bit as awful as working with any other run-of-the-mill support person with homicidal tenencies and a persecution complex (like me for instance). But the thought of taking on some complete greenhorn, removing the brainwashing they received about user service, then retraining them in the gentle art of user discipline, just upsets me.\par
+\par
+And to top it off he knows this, and also knows that I have a couple of weeks of beach leave (i.e. User support conference in the bumhole of Leeds [insert any Leeds location here] which I have NO intention of going to, but can claim gobs of 'travel time' for...) and is trying to stuff it up. To make matters worse, he also knows I'm not a capella on this trip thanks to a heavy drinking session with the Company women's soccer team, and is using this as a way of twisting the knife. If I hadn't taught him so well I'd be really annoyed.\par
+\par
+Still, we can't both be away, AND that I can't phone bomb scares for two weeks continuously. Not again, it would look too suspicious.\par
+\par
+So I'll have to humour The PFY out of his doldrums.\par
+\par
+"What did the Nasty Boss do to you then?" I ask, unable to help myself.\par
+\par
+"RIGHT!" The PFY cries, and bowls out of the office at speed.\par
+\par
+Woopsy.\par
+\par
+Half an hour later The PFY's back with a wadge of contracting papers, looking through the list of available jobs. Half an hour later he's sighing audibly, so I figure it's time to help out.\par
+\par
+"Anything up?"\par
+\par
+"What does 'Seasoned veteran of computing' mean?" he asks, looking up.\par
+\par
+"VMS programmer. Bound to be. The 'seasoned' bit means you need thick glasses, a beard and no clothes sense, the 'veteran' bit tells you it's VMS. If it were a Seasoned Vet of Programming, that would be different - you'd be a beardy speccy geek who knows COBOL!"\par
+\par
+"What about a Microsoft All-rounder?" The PFY continues, ignoring me.\par
+\par
+"You can use 98 and NT without dribbling..."\par
+\par
+"What about 'Proven experience in Leading Edge Systems'?"\par
+\par
+"Well, the 'Leading Edge' bit means you'd using something with a dubious future, so my guess is Macintosh Support or something involving using a 'Tablet' device"\par
+\par
+"Bastards!"\par
+\par
+"Oh yes, Situations Vacant are a real minefield. Run through some more words, and I'll do a quick translation for you."\par
+\par
+"Committed."\par
+\par
+"You should be if you take this job. Next!"\par
+\par
+"Team Player?"\par
+\par
+"Open Plan office."\par
+\par
+"Project Champion?"\par
+\par
+"Someone to fire when it comes in waaaaay over budget."\par
+\par
+"Key Position?"\par
+\par
+"Security Guard."\par
+\par
+"Willing to go the extra mile?"\par
+\par
+"Either it's MILES out of town or they want you to sleep with their clients to keep them happy."\par
+\par
+"Ah. What about 'Hands on' role."\par
+\par
+"Sleeping with the clients again..."\par
+\par
+"Well there's just bloody NOTHING here!" he snaps, dropping the papers on the desk.\par
+\par
+"What about that one there?" I ask, pointing out a large and colourful ad. "Test Analyst?"\par
+\par
+"What does a test analyst do?"\par
+\par
+"Mainly try and break things - which is not too dissimilar to parts our job in some ways - except that you don't have to let yourself into The Boss's office first."\par
+\par
+"Do you think I could do it?"\par
+\par
+"Course you could!"\par
+\par
+"So should I apply?"\par
+\par
+"Why not? It's only... ..about half your current pay. Oh, and look, you get to work one on one with their Publicity people!!!"\par
+\par
+The PFY's expression tells me that he's had enough.\par
+\par
+"Tell you what," I say kindly. "Why don't I get us some nice cold lagers from the boardroom fridge and you can tell me all about it. Then later, we can go and Test Analyse the boss's new car?"\par
+\par
+It's a tough job being sensitive... \par
+\par
+========================================================================================\par
+\par
+BOFH and the Luser Group\par
+By Simon Travaglia\par
+Posted: 13/09/2002 at 15:34 GMT\par
+\par
+BOFH 2002: Episode 20\par
+\par
+So we're at a (l)user group meeting and are encountering the backlash that a computing professional can expect from the staff that they've selflessly served over the years. Those who aren't too afraid to turn up, anyway.\par
+\par
+And as per usual, there's a mixed group of a: people who want to know why we don't immediately upgrade our software THE INSTANT Gates says it's been released and is the new cure for cancer, and b: technical stick-in-the-muds who thought that Windows for Workgroups may have raised the bar a little too high for their comfort.\par
+\par
+"Why don't we have Windows XP on our machines?" a user whines as soon as we ask for questions - sure there's a conspiracy going on in the company to rival Roswell.\par
+\par
+"Which facility of Windows XP desktop do you need to do your work?" I ask, always wanting to help out.\par
+\par
+"I just need an up-to-date Operating System!" he answers evasively.\par
+\par
+"For... >clickety< ..Producing the wage sheets?" The PFY asks, reading the user's purpose in life from his laptop screen.\par
+\par
+"Not just wage sheets, I do other things as well. But we should keep up to date!"\par
+\par
+"By other things, are you referring to the Internet romance that you're engaged in with... >clickety< MARSHA 23, Gym instructor from Hull, who is in fact.... >clickety< Bruce, 33 Lorry Driver from Kent?"\par
+\par
+"What?!"\par
+\par
+"It's all here in Black and White," The PFY responds, spinning his laptop around and revealing the damning evidence. "We had a quick shufty at the traffic because we were concerned about.... uh.. "\par
+\par
+"..Corporate Espionage" I add.\par
+\par
+"Yes! Corporate Espionage! ... and we noticed a chat session in progress which we thought might be..."\par
+\par
+"Coded information." I suggest.\par
+\par
+"CODED INFORMATION, yes!.. So we tracked down the user to their ISP and then, due to poor security on their desktop, found out who they really were."\par
+\par
+"Coded Information?" the user gasps.\par
+\par
+"Yes, our mistake. We thought 'Back Passage' referred to the rear entry to the building - where someone might sneak documents out. There were a few other terms that we..."\par
+\par
+"I don't think we need to go into it," the user chips in hurriedly. "I probably don't need XP if you guys think everything's OK."\par
+\par
+"BUT THAT'S JUST THE POINT," a greyhair from the records room interjects, picking now as a good time to pop briefly out of his coma. "We keep getting pressured to CHANGE! We just get used to something and someone wants to change it!!"\par
+\par
+(I feel an "I still use Word Perfect Version 1 and it does what I want" speech in the making)\par
+\par
+"When I started here..."\par
+\par
+(told you so)\par
+\par
+"...we just used the editor thingy, and mailed each other what we needed. Now we've got to use some new bloody Outlook thing that makes no sense at all! I liked the editor, it was simple and it did what you needed!!"\par
+\par
+"It didn't have a spell checker," the first git argues.\par
+\par
+"WE DIDN'T NEED SPELL CHECKER! We KNOW how to spell, people are just too lazy to use their DICTIONARIES!!"\par
+\par
+I know both where this is heading and how long it's going to take to get there. I silently signal The PFY to ring me on my cellphone with an "urgent" problem. Seconds later, the phone rings and I make some appropriate affirmative noises to the pager message before making my excuses and slipping off with The PFY for a 'MAJOR FAULT'. I leave The Boss to it as he tries to match the requirements of the two main complainants.\par
+\par
+THREE HOURS LATER...\par
+\par
+"Well, I think I've come up with a workable solution that will please everyone!" The Boss burbles to us proudly. \par
+\par
+"You can never please everyone," The PFY responds, speaking from experience.\par
+\par
+"Well I think we can. This a list of what people want - XP at the latest level, some who want NT4, a handful of Windows 98, one OS2 thingy and a couple of people who want their MSDOS stuff back again. Which doesn't sound all that hard. Anyway, I've made an executive decision, so we have to do it! So when can sort all that out?"\par
+\par
+Somewhere, in the back reaches of my mind, a single piece of straw turns a camel into a paraplegic...\par
+\par
+"In no time at all," I respond, leading The Boss towards the Tape Safes. "In fact we keep all our media in a fireproof safe which rarely needs to be opened, thanks to a dinky built-in deposit slot."\par
+\par
+"Really?"\par
+\par
+"Yes," The PFY adds, turning the key and pulling the door release lever. "It's designed for Night Deposits at petrol stations and convenience stores, but we use it to make sure our software is quickly securable."\par
+\par
+"Really? Well I suppose it's a good idea isn't it, you can't be too careful with softw...\rdblquote\par
+\par
+>Trip!<\par
+\par
+>Thud!<\par
+\par
+>SLAM!<\par
+\par
+"..and so for system stability and ease of maintenance, we'll be sticking with the corporate standard of everyone at the same Operating System level," The Boss says carefully.\par
+\par
+"Excellent!" The PFY says encouragingly. "Now one more time - this time with feeling and directly into the microphone - and if you're lucky we'll 'deposit' enough air to tide you over till we've multicasted your latest 'Executive Decision'. And no more screaming about being locked in a safe or we'll deposit some more of that used water..."\par
+\par
+It's a tough life enforcing corporate standards - but someone has to do it.... \par
+\par
+========================================================================================\par
+\par
+The BOFH Questionnaire: How Geeky Are You?\par
+By Simon Travaglia\par
+Posted: 28/09/2002 at 09:29 GMT\par
+\par
+BOFH 2002: Episode 21\par
+\par
+\par
+In these days of backward masked cookies, electromagnetic thought-induction from Plasma displays and TV footage of Bill Gates getting hit in the face with a pie, none of us are safe. The subtle seduction of your subconscious (try saying THAT fast, ten times when you've had 4 pints and you'll know how hard it is to type) is happening every day. Without your knowledge.\par
+\par
+Just how geeky have you become? Sure, you say you're connected with the real world, but what proof have you got that you're not turning into a closet case furry tooth with full on pocket protector, thick rimmed glasses, and even worse, an autographed photo of Bill Gates by your bedside? Take this simple household test to see how you may have drifted in your thinking, and whether it's too late to save yourself and those around you...\par
+\par
+1. The only interview method to be universally outlawed by the Geneva Convention is:\par
+\par
+A. Physical Torture \par
+B. Solitary Confinement \par
+C. Forcing the Subject to drive a Trabant for a week \par
+D. Forcing the Subject to use OS2 for a day. (which feels like eternity) \par
+\par
+2. You're locked in a room with Richard Stallman and Bill Gates and have only a gun with two bullets in it (which you normally secrete on your person in case you ever get locked in a room with Richard Stallman, Bill Gates, etc). They both clear their throats to speak. What do you do?\par
+\par
+A. Shoot Bill, hoping he hasn't got a tablet device (or the XP Security Vulnerability notes) crammed up his blazer \par
+B. Shoot Richard, hoping he hasn't got the notes for his speech in front of his heart \par
+C. Shoot Richard AND Bill and take your chances \par
+D. Shoot yourself, twice, for getting into such a contrived situation \par
+\par
+3. You meet someone nice at the pub and immediately ask them to tell you:\par
+\par
+A. Their Star Sign \par
+B. Their Phone Number \par
+C. Their Name \par
+D. Their IRC Handle \par
+E. Whether they prefer RD or DDR in performance applications? \par
+\par
+4. Speaking of IRC Handles, your handle is based around:\par
+\par
+A. Your name and a number \par
+B. Your nickname and a number \par
+C. A mannerism or pastime and a number \par
+D. A physical attribute of yours that you claim is over a foot long. i.e. A leg E. D,and it's not your leg. I.e. Arm F. E, and it's not your Arm G. Nor your torso, your large or small intestine, your veins or artieries...\par
+\par
+5. A new machine arrives at work and is delivered to the recipients office before you can get a good look at it. You:\par
+\par
+A. Ignore it as you're bound to see another one sometime \par
+B. Try to catch a glimpse of it through the doorway\par
+C. Offer to help the recipient unpack it, then takeover as soon as they agree\par
+D. FAKE A SEIZURE outside the office just so they'll give you a couple of minutes alone with the box when you say you need to catch your breath.\par
+\par
+6. The LEAST believable thing about the movie THE NET was:\par
+\par
+A. That they could trace a cellphone that accurately \par
+B. That a woman could make a short phone call in the first place \par
+C. That anyone who cut themselves off from the rest of the world wouldn't have installed a dual head espresso machine beforehand \par
+D. That a techo would be using a Macintosh.\par
+\par
+7. Your email is going to be down for two days while the server is replaced so you:\par
+\par
+A. Bulkmail everyone in your entire address book warning them about it in case they choose those day to email you \par
+B. Change ISP \par
+C. Arrange for clinical sedation and hospitalisation to get you through \par
+D. Use it as an opportunity to do all those things you never have time for normally, I.e. Talk to the wife and kids, eat, wash, etc.\par
+\par
+8. Your favourite joke ends:\par
+\par
+A. "..have you got any paper?" \par
+B. "Don't call me wooden eye..." \par
+C. "If I could walk like that I wouldn't need talcum powder" \par
+D. "And the Salesman said, IT'S WINDOWS 2000 SP1 you asked for, which doesn't HAVE that vulnerability, WA! HA! HA! HA!"\par
+\par
+9. Inside your wallet, in front of the condom that expired three years after you bought it (which in turn was three years before now), you have a picture of:\par
+\par
+A. Yourself, in case you ever need ID \par
+B. Your Mum and Dad \par
+C. Your girlfriend - well, the woman from the underwear Ad that you WISH was your girlfriend\par
+D. A fully configured quad processor box with 4 Gigs of DDR Ram, a terabyte of HD and top of the line graphics card.\par
+\par
+10. Some ridiculously contrived situation occurs in which you're dying - or something - and you have to give your last words. No, bugger it, you have to give the epitaph for your tombstone. Don't ask why, it's my bloody questionnaire! What is your epitaph?\par
+\par
+A. "Live long and Prosper" \par
+B. "He was a good bloke really" \par
+C. "Press Return to Continue" \par
+D. The entire Microsoft Site Licence Agreement documentation, including subclauses and appendices - because people like Stonemasons who work with Analogue media have it coming\par
+\par
+11. You're doing a questionnaire about how geeky you are, when you finally realise:\par
+\par
+A. It's Lunchtime \par
+B. It's Hometime \par
+C. It's Day Time \par
+D. There are no answers, but getting this far must be a warning sign in and of itself..... \par
+\par
+=======================================================================================\par
+\par
+The killer BOFH bot from the basement\par
+By Simon Travaglia\par
+Posted: 31/10/2002 at 10:55 GMT\par
+\par
+BOFH 2002: Episode 22\par
+\par
+"Hey, look what I found in the basement," The PFY burbles early one VERY slow afternoon, dragging a squat hunk of hardware on wheels into Mission Control and interrupting my afternoon meal and TV watch. I mean backup verification procedure.\par
+\par
+"Ah, it's one of those old cleaning bots," I reply nonchalantly, "Haven't seen one of those in a long while. It's probably broken\'85"\par
+\par
+"Well that's the funny thing!" The PFY replies. "I slapped a charge cable into the thing, plugged it in, and pressed the RESET button, and THIS happened."\par
+\par
+>Click!<\par
+\par
+The cleaning bot's LED panel flips through it's self-test codes until the message "RAZOR 11/11-3" whizzes across the LED display.\par
+\par
+"What does it mean?" The PFY asks\par
+\par
+"Oh, that'll be part of the ROM - happens if the bot fails self test. I shouldn't worry about it" I respond sagely, kicking the robot into power-off mode quickly \par
+\par
+"So it's stuffed then?" The PFY asks, giving the bot a friendly tap on the front panel with a hammer, causing the bot to reboot in a suck mode that would put a hardware rep to shame, whilst rocketing around the office after The PFY, bashing into furniture in a frenzy. "Hey!"\par
+\par
+"It's scrambled code from an impartial charge and dud ROM, like I said!" I yell, as I jump up onto my desk, reaching for the NonVolatile reprogramming tool (sledgehammer), should it be needed. "Just short out the two battery test holes at the top of the front panel"\par
+\par
+"With what?" The PFY asks, backing into a corner at speed\par
+\par
+"STAPLE-GUN," I cry, pointing at my desk as the Bot makes a lurching bid for freedom\par
+\par
+Barely a minute later it's all over and the Bot is again an unmoving mess. I take the precaution of removing the battery lead before I pry the staples out, just in case..\par
+\par
+"That was weird!" The PFY gasps, "What the hell was it doing?" \par
+\par
+"Like I said, it was just ROM diags gone wrong. It was probably trying to clean something"\par
+\par
+"Well it DID seem to be doing something semi-intelligent..."\par
+\par
+"Yeah well, it's broken now, so chuck it back in the basement before it hurts someone."\par
+\par
+"But it's..... ...Is there something you're not telling me?" The PFY asks, catching a small whiff of rodent.\par
+\par
+"Of course there is!" I respond "ONE, I earn a lot more than you THINK I do, TWO, It was me who superglued your laptop into its docking station - not the site services manager that you had fired a week later as a peeping tom, THREE, your chair is configured to zap you on every 1213th time you sit on it, FOUR y..."\par
+\par
+"APART from the usual stuff!" The PFY interrupts.\par
+\par
+"OK, OK, it's a fair cop guv!" I admit, deciding to play the truth card. "The bot was my entry in the bot .vs. bot automated carnage wars."\par
+\par
+"Oh you mean like those ones on TV?"\par
+\par
+"No, no, they're just sad, remote controlled boxes in skating rink, with even sadder owners. THIS was the contest of champions - for the truly intelligent thinking MACHINES that make their own rules! Ones that can find an opposing bot in a 3 dimensional maze, hunt them down and destroy them!"\par
+\par
+"Really. So why'd you chuck it in the basement?"\par
+\par
+"Unfortunately, the thing never went all that well. Had problems detecting the difference between desk and bot, rubbish bin and bot, and, most distressingly, me and bot."\par
+\par
+"You?!?" The PFY feels obliged to ask.\par
+\par
+"Yes indeedy, most hairy. Not to mention that there's a large ball peen hammer secreted somewhere in it's armour which it wanted to introduce me to. Repeatedly."\par
+\par
+"A Ball Peen Hammer?!!!"\par
+\par
+"Yes made a slight mistake when beta testing it."\par
+\par
+"Doing it in our office?!!!!" The PFY asks.\par
+\par
+"No, no, I'd tested it in the basement carpark, and brought it back up to the office for fine tuning."\par
+\par
+"...Fine Tuning?"\par
+\par
+"Yeah, Remove the image of the Boss's car from its NVRAM. Not that it looked anything like a car after the Beta test."\par
+\par
+"So what happened?"\par
+\par
+"I pressed the Reset button, causing it to acquire the nearest moving object as its next target..."\par
+\par
+"You?"\par
+\par
+"Affirmative, Will Robinson!"\par
+\par
+"What did you do?!?!" The PFY gasps in horror.\par
+\par
+"The only thing a sane man can do when faced with an axe- wielding destruction device on wheels - head for the stairwell."\par
+\par
+"And then?"\par
+\par
+"It slipped past me and crashed down three stories into the basement, at which time I took the precaution of disconnecting the battery and locking the door."\par
+\par
+"But you must've known I'd go down there and find it sooner or later?!"\par
+\par
+"Yes, yes, but like I say, you have to connect the battery and press the reset button."\par
+\par
+"So you left a homicidal device in a room, just waiting for someone curious to come and accidentally trigger it?!" The PFY gasps.\par
+\par
+"Yes."\par
+\par
+"I could have been seriously injured."\par
+\par
+"True."\par
+\par
+"And you've no remorse have you?"\par
+\par
+"Ahhhhhhhmmm... No."\par
+\par
+"I'm.. I..... So what do you reckon.. Just leave instructions on it for The Boss, start the webcam and pop off to lunch?" The PFY suggests.\par
+\par
+"Gravy!" \par
+\par
+=======================================================================================\par
+\par
+BOFH: Today the CEO. Tomorrow the Board!\par
+By Simon Travaglia\par
+Posted: 07/11/2002 at 22:00 GMT\par
+\par
+BOFH 2002: Episode 23\par
+\par
+\par
+So The PFY and I are laxing out in the office when a Bloke from HR wanders in with The Boss, looking rather nervous.\par
+\par
+"Ah... Could you two, uh, spare some time?" The Boss asks. "There's a a disciplinary meeting that we'd like you to come to..."\par
+\par
+"Whatever it is, we didn't do it!" The PFY pre-empts, "We've been playing games and reading people's email ALL morning - it's all on camera, and you can check!"\par
+\par
+"Wa? No, no, it's not about that... er - it's just that the Disciplinary Committee from Head Office is coming in and is meeting to look over some complaints, and as the problems are in your area of expertise and experience we thought that we might be able to make use of your.. particular talents."\par
+\par
+Talk about laying it on thick...\par
+\par
+"Oh!" I cry, "Only too happy to help! What would you like us to do, some interviewing in the basement with the rubber hose, chicken lard and the hungry doberman or just a bit of general 'putting the slipper in' to extract a confession - that sort of thing?"\par
+\par
+"Wha?!" The HR Bloke gabbles.\par
+\par
+"Ah no," The Boss chirps. "We're thinking more of opinions on the technical aspects of some complaints that have been escalated through the Company. In one case a particularly sensitive enquiry that we need treated with the utmost discretion\'85"\par
+\par
+"Discretion is my middle name!" The PFY cries.\par
+\par
+"Ah, I think you mean cretin" I correct.\par
+\par
+"Same thing," The PFY responds.\par
+\par
+"Well ANYWAY," I continue. "You can be assured that we will treat this with the sensitivity that this deserves."\par
+\par
+With that we're on our way to the meeting - so quick in fact that I barely have time to zero the digital recorder in my PDA before joining the witch hunt.\par
+\par
+. . .\par
+\par
+We get to the meeting room, and it's a bunch of stuffed-shirt-suit- and-tie-combos, some of whom are obviously board members, whilst others have the distinct greasy feel of lawyer types. \par
+\par
+I smell intrigue....\par
+\par
+"OK, so we're just going to run over the basics of one of the alleged incidents that are claimed to have occurred in the past week," The Head Shark starts. "On or around the early morning of Wednesday of last week, an alleged email message purporting to be from someone in very senior management was delivered to a member of his junior staff, apparently suggesting an illicit sexual encounter. This alleged message is then said to have been rebuffed, causing a second alleged message strongly restating the first. This second message\'85"\par
+\par
+"ALLEGED message," The PFY adds helpfully.\par
+\par
+"Ah yes, ALLEGED message was apparently ignored, causing a third ALLEGED message one hour later, again strongly restating the first two. A complaint was laid with Head Office. This activity is alleged to have continued for the rest of the day, causing a further complaint. The purpose of this meeting is to establish whether the mail was in fact sent, where it was sent from, by whom, and whether the content of the message is grounds for a legitimate complaint?"\par
+\par
+"Shouldn't someone just ask the alleged sender?"\par
+\par
+"We spoke to the alleged sender's counsel," The Head Shark responds, indicating a quiet suited shark in the corner "stating that due to a mixup in his medication his recollection of events is somewhat less than full."\par
+\par
+"Medication?" The PFY asks.\par
+\par
+"Yes. A herbal drink, recommended by an accredited naturopath," The Quiet Shark adds.\par
+\par
+"A fermented herbal drink?"\par
+\par
+"It may have been."\par
+\par
+"So he was pissed on the job!" The PFY blurts, coming to the point.\par
+\par
+"His performance was somewhat impaired by the side effects of his medication, but that's no reason to suggest that he was responsible for the actions being complained about - someone may have taken advantage of his condition to..."\par
+\par
+"OK," I interject "Mind if I leap in here? First off, what was the email address that the messages were sent to?"\par
+\par
+"Alleged messages," The PFY again adds.\par
+\par
+"Indeed\'85"\par
+\par
+I get the info, and quicker than you can say "fire up 80211b on the old personnel disorganiser and cruise the sendmail logs" I've fired up 80211b on the old personnel disorganiser and cruised the sendmail logs.\par
+\par
+"OK, so the mail was sent from the CEO's machine."\par
+\par
+"Are you sure?" Head Shark asks.\par
+\par
+"Quite."\par
+\par
+"And did he send it?"\par
+\par
+"If he didn't, someone who knew his password did, as several weeks ago he insisted we install an 'authenticated SSL encrypted MTA, whatever the hell that is' because he'd read on an inflight magazine somewhere that that was important..."\par
+\par
+"Doh-k. So you're implying that as first glance it looks fairly incriminating then?"\par
+\par
+"Ahhh, no more incriminating than if he'd been seen at the water cooler with a fistful of condoms and a 50 blister-pack of Rohypnol..."\par
+\par
+"Heart Medication!" The Quiet Shark interjects quickly. "Taken under the clinical supervision of his doctor!"\par
+\par
+This just gets better and better...\par
+\par
+"OK, so bottom line, let me get this clear - he rocked into work in Oliver Reed mode, got over-verbal in email, then went so far off the deep end that he needed decompression the next morning, and you want to cover it up."\par
+\par
+"I don't think that you can rea..."\par
+\par
+"In a nutshell, yes" The Head Shark adds.\par
+\par
+"So what you're actually talking about is an out-of-court settlement, in the four-figure region for three people."\par
+\par
+"Three?"\par
+\par
+"Yes. Well, the complainant - for stress, etc; then myself and my assistant!"\par
+\par
+"Why should be pay you??"\par
+\par
+"It seems obvious - to massage an element of doubt into the logfiles so they can't be ."\par
+\par
+"So you're saying you could obscure the true source of the email?"\par
+\par
+"For an extra hundred, you can nominate who you'd have liked it to come from..."\par
+\par
+Half an hour later a deal is struck, as are three cheques. Not a bad consultancy fee, all things concerned. Course, the CEO's secretary's going to get her 50% cut from our share for having the idea in the first place and spiking the CEO's morning spirulina, but all in all, not a bad haul.\par
+\par
+Today, the CEO. Tomorrow, The Board! \par
+\par
+========================================================================================\par
+\par
+BOFH and the Nigerian 419\par
+By Simon Travaglia\par
+Posted: 21/11/2002 at 21:28 GMT\par
+\par
+BOFH 2002: Episode 24\par
+\par
+Dear Reader,\par
+\par
+Allow me the opportunity of presenting a commercial proposition to you that would be mutually beneficial. I got your name and contact from the heeeuge database of Register readers which they use to send unsolicited email and dob people in to their bosses for wasting company time on the web all afternoon when they get back from the pub.\par
+\par
+I consulted many sources of information on the web, including several search engines, a web self help utility, and 321 porn sites. They all agreed that you were a reliable person of good character apart from the fetish for donkeys and tomato paste. For this reason I feel that I can confide in you - and only you - my true identity. I am The PFY, otherwise know to you as the Pimply Faced Youth, assistant to the Bastard Operator From Hell.\par
+\par
+As you know, The Bastard is a very wealthy person, having stolen, lied, cheated and blackmailed his way into several dubious consulting positions, including the one he now holds with a large and very cash-rich company. In recent days, the Bastard Operator from Hell has gone on an extended holiday under the guise of searching the web for a secure version of Explorer, and is not expected back for several years.\par
+\par
+Before he left, he deposited a large amount of his wealth in a room in the basement of the company building, carefully labelled so as to frighten any inquisitive person from ever thinking of opening it. (I.e. "Audio Tapes - Larry Ellison on the Future of Computing, Bill Gates on Microsoft's Vision and Richard Stallman on Free Beer"). A conservative estimate of this wealth is several thousand British Pounds, with a street value of several thousand English Pounds, or several billion turkish lire (or a couple of trillion Turkish lire if you read this in a couple of weeks, allowing for devaluation).\par
+\par
+No-one apart from myself knows where this money is hidden as The Bastard was careful to wait until 4:58pm, when no-one was left in the building (and before night security clocked in) to put the money in place. \par
+\par
+I am now looking for a partner to help me invest these ill-gotten gains in high return stocks and bonds.\par
+\par
+I am humbly seeking your assistance in the following ways so that I can begin the transfer of this money to you to invest:\par
+\par
+To serve as guardian of this money until I can transfer it (in suitcasefuls, so as not to attract attention) from it's storage.\par
+To make arrangements for my accomodation, meals and\par
+entertainment expenses, as it might be insecure for me to be seen my home until the transfer is complete\par
+\par
+In return for your time and aid, I am fully prepared to give you half - that is 50% - of the contents of the locked briefcases when they have all been transferred from the company, to do with as you please. I am sure that you will agree that this is a most lucrative offer, and one which is unlikely to be made to just anyone.\par
+\par
+Should you be willing to partake in this venture and assist me in this undertaking, you can be assured that it will be concluded in a matter of a few weeks and with the utmost discretion. Any notification to the Inland Revenue authorities of the money is a matter up to you and you alone.\par
+\par
+I look forward to corresponding with you via email about this exciting opportunity in the near future - however, I would stress the need for security and discretion in this undertaking as my supervisor has a paranoia verging on ESP when it comes to losing any of his investments. Should he find out of the venture I am proposing, I am sure that his reaction would be both swift and vio\par
+\par
+asf;erio \par
+\par
+=======================================================================================\par
+\par
+The Bastard Lift Operator\par
+By Simon Travaglia\par
+Posted: 13/12/2002 at 16:56 GMT\par
+\par
+BOFH 2002: Episode 25\par
+\par
+So it seems that due to some engineering fault or the  other the lift has failed and is now stuck between floors with The Boss, The PFY and I in it - which is a first.\par
+\par
+"How long do you think it'll be?" The Boss asks as the beads of perspiration springing up on his face in record time.\par
+\par
+"Oh, Should only be a couple of hours - if the brakes haven't activated," The PFY says reassuringly.\par
+\par
+"Oh, I hope they haven't activated!" he snivels.\par
+\par
+"Me too" I add. "Unless of course there's a cable problem, and it snaps. Then we'd want the breaks to activate."\par
+\par
+"Yes" The Boss murmurs quietly, groping around for his antacid tablets. "This is just my worst nightmare!"\par
+\par
+"Really?" The PFY asks. "Mine's being locked in a room with Richard Stallman, Bill Gates and Larry Ellison for a week."\par
+\par
+"With no food and water, having to drink your own urine?" I ask.\par
+\par
+"No, just having to listen to them practise their speeches."\par
+\par
+"Oooh, much worse - Free Beer, Free IE, and feel Free to call me names!"\par
+\par
+"Yes. So what's your worst nightmare?"\par
+\par
+"It's a long one..."\par
+\par
+"We're not going anywhere..."\par
+\par
+"I get to work in my Dad's flannelette pyjamas with the gaping fly, don't have my security pass, the Neanderthal at the desk won't let me in, then when I do get to my desk I find that the CEO has adopted OS2 as the Company standard and has had insultants in to do the conversion the overnight. Which doesn't work - of course - and so we get calls thick and fast on phones that won't pull out from the wall. And visitors."\par
+\par
+"Ooh, sounds nast..."\par
+\par
+"...Then I find all the keyboards have been changed for those 'Natural' keyboards (because you find a lot of keyboards like that in Nature), Mice have been replaced with Mouseballs for 'PERSONAL COMFORT' reasons, someone's removed Mozilla, Unreal Tournament and the Snooping tools from my machine, AND it's blood sausage day at the Cafeteria."\par
+\par
+"You've thought about that a lot, haven't you?" The PFY asks.\par
+\par
+"Yes. Well, it passes the time when you're trapped in a lift. HEY! This isn't one of those fire-rated lifts is it?" I ask, feigning horror.\par
+\par
+"What?" The Boss gasps, not liking what he's hearing. "Why?!!!"\par
+\par
+"Hermetically sealed - so that you don't die of smoke inhalation if you use the lift in a fire."\par
+\par
+"Oh" The Boss sighs, relieved.\par
+\par
+"No, but you do suffocate to death when the air runs out..." The PFY comments.\par
+\par
+"If you don't cook first..." I respond. "Still I guess in our present circumstance it's best not to take any chances. We'd better just conserve oxygen."\par
+\par
+"Uh.. How long.. I mean how much oxygen do you think we have?" The Boss whimpers.\par
+\par
+"Stacks!" I reply, noting that The Boss is on the verge of becoming a wet-business-shirt competitor. "A couple of hours at least!"\par
+\par
+"Yeah," The PFY chirps. "And the service guy's normally here within 10 minutes or so."\par
+\par
+"OH!" The Boss pants, more relieved than before.\par
+\par
+"Except that time when we said it was urgent and he was in such a hurry to respond that he ran up the back of that cab in town," I add.\par
+\par
+"Oh yeah," The PFY chuckles. "and he turned up the next day with his toolbox, the steering wheel and some seriously untreated concussion."\par
+\par
+"It's funny how you always remember the good times...."\par
+\par
+"SO THERE'S A CHANCE WE'LL SUFFOCATE!?!?!" The Boss garbles hysterically.\par
+\par
+"A slight chance. But if we don't wind up the engineer, he'll be here in two shakes..."\par
+\par
+"Unless he's on another job," The PFY says helpfully.\par
+\par
+"Can't we get out through the hatch?" The Boss asks, pointing at the manhole above me.\par
+\par
+"Ordinarily, yes."\par
+\par
+"Ordinarily?"\par
+\par
+"Well in Utopia. But back here in real world, people open the access panel, strap high explosive to the sides of lifts and make you ride around in buses full of explosive."\par
+\par
+"WHAT?!"\par
+\par
+"He means that they lock the doors to stop people playing around in the lift shaft."\par
+\par
+"SO WE'RE STUCK"\par
+\par
+"Well yes," I respond. "But only till the engineer gets here."\par
+\par
+"If he gets here in time.." The PFY again adds.\par
+\par
+. . . 20 minutes later. . .\par
+\par
+"THERE'S A PHONE!" The Boss shouts, pointing at the wall behind me.\par
+\par
+"Yes?"\par
+\par
+"We could ring for help!"\par
+\par
+"We could use my phone for that," I reply, pulling my phone out of my pocket "But the fact remains we might rush the engineer, who might even at this moment be undoing the reset panel above us - and the phone call comes in, he gets a fright and accidentally touches the three phase supply."\par
+\par
+"If he doesn't crash his van again," The PFY adds once more, determined to add value to this conversation. "And is it my imagination, or is that twanging noise actually the lift cable breaki..."\par
+\par
+>Kathud!<\par
+\par
+... 2 minutes later, when The Boss has come around ...\par
+\par
+"How long was I out?"\par
+\par
+"Oh, only 10 minutes or so. But nothing's happened!" The PFY says, helping The Boss into a sitting position.\par
+\par
+"So this is it then?" The Boss asks.\par
+\par
+"Could be," I add "You know, I always thought that I'd check out under better circumstances."\par
+\par
+"'BROWSING' internet porn?" The PFY asks.\par
+\par
+"Something like that... Look, I know we've had our differences, but water under the bridge and all that. What I want to say is, well, if I don't make it and one of you does... I forgot to write down the combination on the tape safe when I changed it last week, and I'd appreciate it if you could just remember it. It's 17, 35, 85, 14. I'm sure there's no need, but.... well... just in case."\par
+\par
+"Oh!" The Boss burbles. "Actually, I changed the Combination to the Parts Store safe myself yesterday, and, well, if things don't work out for me, I suppose I should..."\par
+\par
+... ten minutes and a 'cable-twang' later . . .\par
+\par
+"QUICK, HE'S COMING AROUND!" The PFY hisses.\par
+\par
+Quicker than you can say "Rip off all the expensive kit in the Parts store safe" I've done it, and am back in the lift with the doors closed and emergency stop back on.\par
+\par
+"Ohh," The Boss mumbles. "I hoped it was just a dream."\par
+\par
+"No, it looks like it could be all ove... >muffled-click< HEY, THEY'VE FIXED IT!"\par
+\par
+"Oh THANK GOODNESS!!!" The Boss cries, stumbling out into 'fresh air'. \par
+\par
+"Oh yes!" The PFY cries. "A brush with death like that, well, it really focuses your mind on what's important!"\par
+\par
+"I couldn't agree more," I concur. "So, a couple of pints and a curry then?"\par
+\par
+========================================================================================\par
+\par
+The BOFH Christmas Spirit\par
+By Simon Travaglia\par
+Posted: 27/12/2002 at 10:30 GMT\par
+\par
+BOFH 2002: Episode 26\par
+\par
+So with Xmas looming large on the scanners, we just  HAVE to have a departmental meeting to cover all of the pending issues.\par
+\par
+Sigh.\par
+\par
+"Right," The Head of IT starts cheerily. "While it's fairly late in the piece, I thought I'd call you together to go over our Xmas plans."\par
+\par
+"I'm off to the coast with that lovely young woman from accounts receivable!" I blurt - but mainly just to brag.\par
+\par
+"NOT those sort of plans - company plans," the Head counters snappily. "Okay, first item on the agenda, Xmas Social event!"\par
+\par
+"Hear Hear!" The PFY cries - having been getting into the 'spirit' of Christmas since around nine this morning when he slipped off to the stationery cupboard with one of the PR temps and four bottles of cheap plonk.\par
+\par
+"Yes" The Head continues, much less animated. And after last year's debacle, we.."\par
+\par
+"Debacle?!" The PFY blurts. "That was great!"\par
+\par
+The Head ignores him, suppressing a shudder at the havoc that was wreaked by a single flagon of tape head cleaning fluid in the non- alcoholic punch.\par
+\par
+"AFTER LAST YEAR, WE PUT THE EVENT TYPE TO THE VOTE, and the most votes were cast for the Indian Restaurant in Brick Lane. 143 votes in fact!"\par
+\par
+"Popular place," I comment.\par
+\par
+"143 votes from a total of 29 staff...." he remarks pointedly.\par
+\par
+"VERRRY popular indeed," The PFY slurs happily.\par
+\par
+"Be that as it may, you've made your decision, so we'll be heading there tonight, 7pm."\par
+\par
+"CURRY!" The PFY burbles happily.\par
+\par
+"Now," The Head continues, preferring to ignore The PFY. "Next item on the agenda: cover over the break. We'll be needing people available to be called in, should any critical system fail."\par
+\par
+The Boss makes a point of looking my way for some reason, so I feel obliged to chip into the conversation from my logistical sandtrap.\par
+\par
+"So just the usual compensation then - Triple time, three hour minimum callout, meal and travel allowance, plus Time-in-Lieu?"\par
+\par
+"Double time for work and travel time, no minimum, meal, travel allowance nor TIL," the Head counter-offers.\par
+\par
+"Ah well," I respond. "I probably can't make it - Death in the Family."\par
+\par
+"What?"\par
+\par
+"Well Christmas, you know, big family reunions and all that. Something's bound to happen once we crack the keg of meths..."\par
+\par
+"...yyyyeeeess, Right... And you believe that triple time, etc, would prevent this happening... er ... how?"\par
+\par
+"Increased goodwill. I'd be happier, they'd be happier, much less chance of a ... tragedy"\par
+\par
+"I see. Well, as it's a contingency plan only, I suppose that we could agree to your requests just this once."\par
+\par
+"Excellent," I cry, making a note in my diary to crash the site web server every day over the break and configure the console system to automatically restart it in a manner suggesting human intervention.\par
+\par
+"HOWEVER, I think we'd better clearly define what our CRITICAL systems are," he continues, not as stupid as he looks.\par
+\par
+"Email," one No-Life from the Helldesk mumbles, looking up from his PDA. "We need to be able to keep in touch on email..."\par
+\par
+"Okay, EMAIL - anything else?"\par
+\par
+"Financials Server - so people get paid over the break?" I suggest.\par
+\par
+"Right!" The Head agrees, scribbling away furiously.\par
+\par
+"Web Server so the real world knows we're still in business?"\par
+\par
+"Uh-huh."\par
+\par
+"Unreal Tournament Server," The PFY slurs.\par
+\par
+"Uhnn - what does that do?"\par
+\par
+"Uh, It's the machine that uses a simulation of real world to determine network connectivity and lag," I respond.\par
+\par
+"Right, any others?"\par
+\par
+No-one stirs...\par
+\par
+Before we can get onto the really exciting agenda items like the message in the (extremely late) corporate Christmas cards or personal letters from the CEO, both The PFY's and my pagers go off.\par
+\par
+"If you'd excuse us," I blurt, getting up from the table. "Looks like we may have a bit of a problem."\par
+\par
+... Downstairs, two minutes later...\par
+\par
+"Okay!" The PFY bubbles as we ferret through the mail cart (in response to the mail delivery page). "What are we looking for this time?"\par
+\par
+"Any parcel shaped like a bottle, any package which is well wrapped and/or addressed to The Boss or the Head of IT. Double word score if it's got a vendor's name and/or ribbon on it. They always leave it to the last minute to send the really good stuff..."\par
+\par
+...Four Parcels later...\par
+\par
+"Ok, it feels to be like we've got one whiskey and some wine, so I'll clip the parcel open while you get the substitute bottles of watered- down cheap Turkish drain cleaner."\par
+\par
+.. Four switcheroos and several hours later, in Brick Lane...\par
+\par
+"..and as a token of my appreciation, I've decided to donate these bottles of Turkish.. ..wine to the table," The Boss burbles happily, having sniffed the cap of one of the aforementioned fermented grape disasters...\par
+\par
+"A couple of kingfishers for me," I tell the waiter, moments later, "and I think my assistant will have the same. And we'll have that special order now please.."\par
+\par
+[The next day]\par
+\par
+"So it's just us then?" The PFY murmurs, looking around the department at the vacant offices.\par
+\par
+"No, no, The Boss made it in," I respond, "but he just popped off to the toilet about 20 minutes ago. And again two minutes after that. And again two minutes after that. If you listen very carefully you can still hear him weeping. And 26 sick leave notifications. An epidemic!"\par
+"What are we going to do?" The PFY gasps.\par
+\par
+"Apart from waiting for the mailbag? And a quick game or ten of UT?"\par
+\par
+"Yes."\par
+\par
+"Well there's those 27 uncollected Christmas Bonuses...."\par
+\par
+"Of course!"\par
+}
+ 
